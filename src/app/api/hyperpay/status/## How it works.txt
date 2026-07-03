@@ -1,0 +1,72 @@
+## How it works
+[1](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep1)
+
+## [Prepare the checkout](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep1)
+[Prepare the checkout](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep1)
+Send the request parameters server-to-server to prepare the payment form.
+[2](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep2)
+
+## [Create the payment form(s)](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep2)
+[Create the payment form(s)](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep2)
+Display the payment form on your checkout page and the shopper submits the payment information.
+[3](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep3)
+
+## [Get the payment status](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep3)
+[Get the payment status](https://hyperpay.docs.oppwa.com/integrations/widget#CNPStep3)
+Find out if the payment was successful.
+
+## 1. Prepare the checkout
+First, perform a server-to-server POST request to prepare the checkout with the required data, including the order type, amount and currency. The response to a successful request is a JSON string with an id, which is required in the second step to create the payment form.
+
+```
+id
+```
+
+For a full list of parameters that can be sent in the prepare checkout request, please see the [API Reference](https://hyperpay.docs.oppwa.com/parameters)
+
+## 2. Create the payment form
+To create the payment form you just need to add the following lines of HTML/JavaScript to your page and populating the following variables
+- The checkout's id that you got in the response from step 1<script 
+	src="https://eu-test.oppwa.com/v1/paymentWidgets.js?checkoutId={checkoutId}"
+	integrity="{integrity}"
+	crossorigin="anonymous">
+</script>
+
+- The shopperResultUrl, which is the page on your site where the customer should be redirected to after the payment is processed  and the brands that will be available.<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>
+
+```
+id
+```
+
+
+```
+<script src="https://eu-test.oppwa.com/v1/paymentWidgets.js?checkoutId={checkoutId}" integrity="{integrity}" crossorigin="anonymous"> </script>
+```
+
+
+```
+shopperResultUrl
+```
+
+
+```
+<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>
+```
+
+View the [customization guide](https://hyperpay.docs.oppwa.com/widget-customisation) for more information on customizing the payment form. Please note if you are using SAQ-A compliant credit card form click Enter button on your keyboard to execute the payment.
+- Display of multiple card forms is now supported. This feature can be used by merchants for card brand promotion and allows the merchant to group card brands across multiple forms as per the need. To put this feature at work, add any number of <form> tag elements as above. The data-brands attribute of the rendered card forms can be configured as per the merchant need.
+<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="VISA"></form>
+<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="AMEX MASTER DISCOVER CARTEBANCAIRE"></form>
+
+
+```
+<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="VISA"></form>
+```
+
+
+```
+<form action="{shopperResultUrl}" class="paymentWidgets" data-brands="AMEX MASTER DISCOVER CARTEBANCAIRE"></form>
+```
+
+[Show all supported brands](https://hyperpay.docs.oppwa.com/integrations/widget)
+A checkout id expires when a payment has been finalized successfully by user, but not later than 30 minutes. Before it expires, it can be used multiple times in order to retrieve a valid payment form. This can occur for example when a user does not finish a payment and reloads the page, or uses the back button of the browser. Therefore you don't have to generate a new checkout ID in such scenarios. However be aware that such cases can generate multiple transactions in the system, for example one (or more) failed and another one successful, based on the same checkout id.

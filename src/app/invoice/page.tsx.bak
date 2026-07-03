@@ -1,0 +1,480 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { useParams, useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
+import { 
+    FileText, Download, Printer, ShieldCheck, 
+    CreditCard, CheckCircle2, AlertCircle, Clock,
+    ChevronDown, Building, Mail, Phone, MapPin,
+    ArrowLeft, Loader2, Lock, Zap
+} from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+import { toast } from 'sonner';
+import HyperPayWidget from '@/components/HyperPayWidget';
+
+interface InvoiceData {
+    _id: string;
+    invoiceNumber: string;
+    customer: {
+        name: string;
+        company?: string;
+        email: string;
+        phone?: string;
+        address?: string;
+    };
+    items: Array<{
+        description: string;
+        quantity: number;
+        unitPrice: number;
+        total: number;
+    }>;
+    subtotal: number;
+    vatRate: number;
+    vatAmount: number;
+    totalAmount: number;
+    currency: string;
+    status: string;
+    dueDate?: string;
+    paidAt?: string;
+    notes?: string;
+    createdAt: string;
+}
+
+export default function PublicInvoicePage() {
+    const params = useParams();
+    const router = useRouter();
+    const [invoice, setInvoice] = useState<InvoiceData | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+    
+    // Payment state
+    const [paymentMethod, setPaymentMethod] = useState('card');
+    const [checkoutId, setCheckoutId] = useState<string | null>(null);
+    const [preparingPayment, setPreparingPayment] = useState(false);
+
+    useEffect(() => {
+        const fetchInvoice = async () => {
+            try {
+                const response = await fetch(`/api/invoices/${params.id}/public`);
+                if (!response.ok) {
+                    throw new Error('Invoice not found');
+                }
+                const data = await response.json();
+                setInvoice(data);
+            } catch (err: any) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        if (params.id) {
+            fetchInvoice();
+        }
+    }, [params.id]);
+
+    const handleDownloadPDF = async () => {
+        if (!invoice) return;
+        try {
+            toast.loading('Generating PDF...', { id: 'pdf' });
+            const response = await fetch(`/api/admin/invoices/${invoice._id}/pdf`);
+            if (response.ok) {
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `Invoice-${invoice.invoiceNumber}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                toast.success('Invoice downloaded', { id: 'pdf' });
+            } else {
+                toast.error('Failed to download PDF', { id: 'pdf' });
+            }
+        } catch (err) {
+            toast.error('Error downloading PDF', { id: 'pdf' });
+        }
+    };
+
+    const preparePayment = async () => {
+        if (!invoice) return;
+        setPreparingPayment(true);
+        try {
+            const brands: Record<string, string> = {
+                card: 'VISA',
+                applepay: 'APPLEPAY',
+                stcpay: 'STC_PAY',
+                tabby: 'TABBY',
+                tamara: 'TAMARA'
+            };
+
+            const response = await fetch('/api/hyperpay/invoice-checkout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    invoiceId: invoice._id,
+                    paymentBrand: brands[paymentMethod] || 'VISA'
+                }),
+            });
+
+            const data = await response.json();
+
+            if (data.checkoutId) {
+                setCheckoutId(data.checkoutId);
+            } else {
+                toast.error(data.error || 'Failed to initialize payment');
+            }
+        } catch (error) {
+            toast.error('Error preparing payment');
+        } finally {
+            setPreparingPayment(false);
+        }
+    };
+
+    if (loading) {
+        return (
+            <div className="min-h-screen bg-navy flex items-center justify-center">
+                <div className="text-center space-y-4">
+                    <Loader2 className="w-12 h-12 text-gold animate-spin mx-auto" />
+                    <p className="text-white/60 font-bold uppercase tracking-widest text-xs">Accessing Secure Invoice...</p>
+                </div>
+            </div>
+        );
+    }
+
+    if (error || !invoice) {
+        return (
+            <div className="min-h-screen bg-navy flex items-center justify-center p-4">
+                <Card className="glass border-white/10 max-w-md w-full p-8 text-center">
+                    <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
+                    <h2 className="text-2xl font-black text-white mb-2">Invoice Not Found</h2>
+                    <p className="text-white/40 mb-6">The link you followed may be invalid or the invoice has been removed.</p>
+                    <Button onClick={() => router.push('/')} className="bg-gold text-navy hover:bg-yellow w-full h-12 font-bold uppercase tracking-widest">
+                        Visit Homepage
+                    </Button>
+                </Card>
+            </div>
+        );
+    }
+
+    const isPaid = invoice.status === 'paid';
+
+    return (
+        <div className="min-h-screen bg-[#070b14] text-white pb-24 relative overflow-hidden">
+            {/* Background elements */}
+            <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-gold/5 to-transparent pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gold/5 blur-[120px] rounded-full -mr-96 -mt-96 pointer-events-none" />
+            
+            <div className="container-premium relative z-10 pt-12">
+                {/* Header Actions */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                    <div className="flex items-center gap-4">
+                        <div className="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center border border-gold/20">
+                            <FileText className="w-8 h-8 text-gold" />
+                        </div>
+                        <div>
+                            <div className="flex items-center gap-3">
+                                <h1 className="text-3xl font-black tracking-tighter" style={{ fontFamily: 'var(--font-display)' }}>
+                                    {invoice.invoiceNumber}
+                                </h1>
+                                <Badge className={`
+                                    ${invoice.status === 'paid' ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' : 
+                                      invoice.status === 'overdue' ? 'bg-red-500/20 text-red-400 border-red-500/30' : 
+                                      'bg-gold/20 text-gold border-gold/30'} 
+                                    border px-3 py-1 uppercase text-[10px] font-black tracking-[0.1em]
+                                `}>
+                                    {invoice.status}
+                                </Badge>
+                            </div>
+                            <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">
+                                Issued on {new Date(invoice.createdAt).toLocaleDateString(undefined, { dateStyle: 'long' })}
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div className="flex gap-3">
+                        <Button 
+                            variant="outline" 
+                            onClick={handleDownloadPDF}
+                            className="bg-white/5 border-white/10 text-white hover:bg-gold hover:text-navy transition-all h-12 px-6 rounded-xl font-bold uppercase tracking-widest text-[10px]"
+                        >
+                            <Download className="w-4 h-4 mr-2" />
+                            Download
+                        </Button>
+                        <Button 
+                            variant="outline" 
+                            onClick={() => window.print()}
+                            className="hidden sm:flex bg-white/5 border-white/10 text-white hover:bg-white/10 transition-all h-12 px-6 rounded-xl font-bold uppercase tracking-widest text-[10px]"
+                        >
+                            <Printer className="w-4 h-4 mr-2" />
+                            Print
+                        </Button>
+                    </div>
+                </div>
+
+                <div className="grid lg:grid-cols-3 gap-12">
+                    {/* Main Invoice View */}
+                    <div className="lg:col-span-2">
+                        <Card className="glass border-white/5 shadow-2xl overflow-hidden rounded-[2.5rem]">
+                            <CardContent className="p-0">
+                                {/* Brand Header */}
+                                <div className="p-10 md:p-12 bg-white/[0.02] border-b border-white/5 flex flex-col md:flex-row justify-between gap-8">
+                                    <div className="space-y-4">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-12 h-12 bg-gold flex items-center justify-center rounded-xl shadow-[0_0_30px_rgba(197,160,89,0.3)]">
+                                                <span className="text-navy font-black text-2xl">SH</span>
+                                            </div>
+                                            <div className="font-display font-black text-xl tracking-tight">
+                                                SAUDI <span className="text-gold">HORIZON</span>
+                                            </div>
+                                        </div>
+                                        <div className="space-y-1 text-sm text-white/40">
+                                            <p className="flex items-center gap-2"><MapPin className="w-3.5 h-3.5" /> Prince Mohammed Bin Abdulaziz St, Riyadh, SA</p>
+                                            <p className="flex items-center gap-2"><Mail className="w-3.5 h-3.5" /> billing@saudihorizon.com</p>
+                                            <p className="flex items-center gap-2"><Building className="w-3.5 h-3.5" /> VAT: 300123456700003</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="md:text-right space-y-4">
+                                        <h3 className="text-gold text-xs font-black uppercase tracking-[0.4em]">Billed To</h3>
+                                        <div className="space-y-1 text-white">
+                                            <p className="font-black text-lg">{invoice.customer.name}</p>
+                                            {invoice.customer.company && <p className="text-white/60 font-bold">{invoice.customer.company}</p>}
+                                            <p className="text-white/40 text-sm">{invoice.customer.address}</p>
+                                            <p className="text-white/40 text-sm">{invoice.customer.phone}</p>
+                                            <p className="text-white/40 text-sm">{invoice.customer.email}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Items Table */}
+                                <div className="p-10 md:p-12">
+                                    <div className="overflow-x-auto">
+                                        <table className="w-full">
+                                            <thead>
+                                                <tr className="border-b border-white/5">
+                                                    <th className="text-left pb-6 text-xs font-black text-gold uppercase tracking-[0.2em]">Description</th>
+                                                    <th className="text-center pb-6 text-xs font-black text-gold uppercase tracking-[0.2em]">Qty</th>
+                                                    <th className="text-right pb-6 text-xs font-black text-gold uppercase tracking-[0.2em]">Unit Price</th>
+                                                    <th className="text-right pb-6 text-xs font-black text-gold uppercase tracking-[0.2em]">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-white/5">
+                                                {invoice.items.map((item, idx) => (
+                                                    <tr key={idx} className="group">
+                                                        <td className="py-8">
+                                                            <p className="font-bold text-white group-hover:text-gold transition-colors">{item.description}</p>
+                                                        </td>
+                                                        <td className="py-8 text-center text-white/60 font-medium">{item.quantity}</td>
+                                                        <td className="py-8 text-right text-white/60 font-medium">{invoice.currency} {item.unitPrice.toFixed(2)}</td>
+                                                        <td className="py-8 text-right font-black text-white">{invoice.currency} {item.total.toFixed(2)}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div className="mt-12 flex flex-col md:flex-row justify-between gap-12">
+                                        <div className="flex-1 max-w-sm space-y-6">
+                                            {invoice.notes && (
+                                                <div className="space-y-2">
+                                                    <h4 className="text-[10px] font-black text-gold uppercase tracking-[0.3em]">Important Notes</h4>
+                                                    <p className="text-xs text-white/40 leading-relaxed italic">
+                                                        "{invoice.notes}"
+                                                    </p>
+                                                </div>
+                                            )}
+                                            
+                                            <div className="p-6 rounded-3xl bg-white/[0.02] border border-white/5 space-y-3">
+                                                <div className="flex items-center gap-2 text-gold">
+                                                    <ShieldCheck className="w-4 h-4" />
+                                                    <span className="text-[10px] font-black uppercase tracking-widest">Secure Document</span>
+                                                </div>
+                                                <p className="text-[9px] text-white/30 font-bold uppercase tracking-widest">
+                                                    This is a digitally generated invoice. No signature is required. All values are in {invoice.currency}.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div className="w-full md:w-72 space-y-4 pt-4">
+                                            <div className="flex justify-between text-sm">
+                                                <span className="text-white/40 font-bold uppercase tracking-widest">Subtotal</span>
+                                                <span className="text-white font-black">{invoice.currency} {invoice.subtotal.toFixed(2)}</span>
+                                            </div>
+                                            <div className="flex justify-between text-sm">
+                                                <span className="text-white/40 font-bold uppercase tracking-widest">VAT ({invoice.vatRate}%)</span>
+                                                <span className="text-white font-black">{invoice.currency} {invoice.vatAmount.toFixed(2)}</span>
+                                            </div>
+                                            <Separator className="bg-white/5 my-4" />
+                                            <div className="flex justify-between items-end">
+                                                <span className="text-gold font-black uppercase tracking-[0.4em] mb-1 text-xs">Total</span>
+                                                <div className="text-right">
+                                                    <p className="text-4xl font-black text-gradient-gold" style={{ fontFamily: 'var(--font-display)' }}>
+                                                        {invoice.currency} {invoice.totalAmount.toFixed(2)}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+
+                    {/* Payment Sidebar */}
+                    <div className="lg:col-span-1 space-y-8">
+                        {isPaid ? (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                            >
+                                <Card className="bg-emerald-500/10 border-emerald-500/20 rounded-[2rem] overflow-hidden p-8 text-center relative">
+                                    <div className="absolute top-0 right-0 p-8 text-emerald-500/5">
+                                        <CheckCircle2 className="w-32 h-32" />
+                                    </div>
+                                    <div className="w-20 h-20 bg-emerald-500 text-navy rounded-full flex items-center justify-center mx-auto mb-6 shadow-[0_0_50px_rgba(16,185,129,0.3)]">
+                                        <CheckCircle2 className="w-10 h-10" />
+                                    </div>
+                                    <h2 className="text-3xl font-black text-white mb-2" style={{ fontFamily: 'var(--font-display)' }}>Paid Total</h2>
+                                    <p className="text-emerald-400 font-black uppercase tracking-[0.2em] text-xs mb-8">Transaction Successful</p>
+                                    
+                                    <div className="bg-navy/40 rounded-2xl p-6 text-left space-y-4">
+                                        <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest">
+                                            <span className="text-white/30">Payment Date</span>
+                                            <span className="text-white">{new Date(invoice.paidAt || invoice.createdAt).toLocaleDateString()}</span>
+                                        </div>
+                                        <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest">
+                                            <span className="text-white/30">Reference</span>
+                                            <span className="text-white">HPY-{invoice._id.slice(-6).toUpperCase()}</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <Button 
+                                        onClick={() => router.push('/')}
+                                        className="w-full mt-8 bg-white/5 border border-white/10 text-white hover:bg-white/10 h-14 rounded-xl font-black uppercase tracking-widest text-xs"
+                                    >
+                                        Return Home
+                                    </Button>
+                                </Card>
+                            </motion.div>
+                        ) : (
+                            <div className="space-y-6">
+                                <Card className="glass border-white/5 p-8 rounded-[2rem] relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 p-8 text-gold/5 group-hover:text-gold/10 transition-colors">
+                                        <CreditCard className="w-24 h-24" />
+                                    </div>
+                                    <h3 className="text-xl font-black text-white mb-6 flex items-center gap-3" style={{ fontFamily: 'var(--font-display)' }}>
+                                        <div className="w-1.5 h-6 bg-gold rounded-full" />
+                                        Pay Invoice
+                                    </h3>
+
+                                    {checkoutId ? (
+                                        <div className="space-y-6">
+                                            <div className="flex items-center gap-4 p-4 rounded-xl bg-gold/5 border border-gold/20">
+                                                <div className="w-10 h-10 bg-gold text-navy rounded-lg flex items-center justify-center shrink-0">
+                                                    <Lock className="w-5 h-5" />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <p className="text-[10px] font-black text-white uppercase tracking-wider">Secure Payment Form</p>
+                                                    <p className="text-[9px] text-gold font-bold uppercase tracking-widest">Encrypted Checkout</p>
+                                                </div>
+                                                <button 
+                                                    onClick={() => setCheckoutId(null)}
+                                                    className="text-[10px] font-black text-white/30 hover:text-white uppercase tracking-widest"
+                                                >
+                                                    Change
+                                                </button>
+                                            </div>
+                                            
+                                            <div className="bg-white rounded-2xl p-4 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                                                <HyperPayWidget 
+                                                    checkoutId={checkoutId}
+                                                    brands={paymentMethod === 'card' ? 'VISA MASTER AMEX MADA' : 
+                                                            paymentMethod === 'applepay' ? 'APPLEPAY' : 
+                                                            paymentMethod === 'stcpay' ? 'STC_PAY' : 
+                                                            paymentMethod.toUpperCase()}
+                                                    shopperResultUrl={`${window.location.origin}/invoice/${invoice._id}/result`}
+                                                />
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <div className="space-y-4">
+                                            {[
+                                                { id: 'card', name: 'Credit / Debit Card', icon: CreditCard },
+                                                { id: 'applepay', name: 'Apple Pay', icon: ShieldCheck },
+                                                { id: 'stcpay', name: 'STC Pay', icon: Zap },
+                                                { id: 'tabby', name: 'Tabby — Split into 4', icon: Clock },
+                                                { id: 'tamara', name: 'Tamara — Buy Now, Pay Later', icon: AlertCircle },
+                                            ].map((method) => (
+                                                <button
+                                                    key={method.id}
+                                                    onClick={() => setPaymentMethod(method.id)}
+                                                    className={`w-full flex items-center gap-4 p-5 rounded-2xl border-2 transition-all duration-300 ${
+                                                        paymentMethod === method.id 
+                                                            ? 'border-gold bg-gold/10 shadow-[0_0_20px_rgba(197,160,89,0.1)]' 
+                                                            : 'border-white/5 bg-white/5 hover:border-white/10'
+                                                    }`}
+                                                >
+                                                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
+                                                        paymentMethod === method.id ? 'bg-gold text-navy' : 'bg-white/5 text-white/40'
+                                                    }`}>
+                                                        <method.icon className="w-5 h-5" />
+                                                    </div>
+                                                    <span className={`text-[11px] font-black uppercase tracking-widest ${
+                                                        paymentMethod === method.id ? 'text-white' : 'text-white/40'
+                                                    }`}>
+                                                        {method.name}
+                                                    </span>
+                                                    {paymentMethod === method.id && (
+                                                        <div className="ml-auto w-4 h-4 bg-gold rounded-full flex items-center justify-center">
+                                                            <CheckCircle2 className="w-3 h-3 text-navy" strokeWidth={4} />
+                                                        </div>
+                                                    )}
+                                                </button>
+                                            ))}
+
+                                            <Button 
+                                                onClick={preparePayment}
+                                                disabled={preparingPayment}
+                                                className="w-full h-16 rounded-2xl bg-gold text-navy font-black uppercase tracking-[0.2em] text-[11px] shadow-[0_15px_40px_rgba(197,160,89,0.3)] mt-6 relative overflow-hidden group"
+                                            >
+                                                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:animate-shimmer" />
+                                                {preparingPayment ? (
+                                                    <div className="flex items-center gap-3">
+                                                        <Loader2 className="w-5 h-5 animate-spin" />
+                                                        Processing...
+                                                    </div>
+                                                ) : (
+                                                    <div className="flex items-center gap-3">
+                                                        <Lock className="w-5 h-5" />
+                                                        Pay {invoice.currency} {invoice.totalAmount.toFixed(2)}
+                                                    </div>
+                                                )}
+                                            </Button>
+                                        </div>
+                                    )}
+                                </Card>
+                                
+                                <div className="p-6 rounded-3xl bg-white/[0.02] border border-white/5 flex items-start gap-4">
+                                    <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 mt-1">
+                                        <Lock className="w-4 h-4" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-[10px] font-black text-white uppercase tracking-widest mb-1">PCI-DSS Compliant</h4>
+                                        <p className="text-[9px] text-white/30 font-bold uppercase tracking-widest leading-relaxed">
+                                            Your payment information is processed through 256-bit SSL encryption. We never store your card details.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

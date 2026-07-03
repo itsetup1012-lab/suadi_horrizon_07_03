@@ -1,0 +1,344 @@
+{
+    "nav": {
+        "home": "Home",
+        "spare_parts": "Spare Parts",
+        "products": "Products",
+        "machinery": "Machinery",
+        "news": "News",
+        "about": "About",
+        "contact": "Contact",
+        "request_quote": "Request Quote",
+        "cart": "Cart",
+        "login": "Login",
+        "logout": "Logout",
+        "brands": "Brands",
+        "services": "Services",
+        "categories": "Categories",
+        "orders": "Orders",
+        "installation": "Installation Services",
+        "warranty": "Warranty",
+        "bulk_quote": "Bulk Quote",
+        "maintenance": "Maintenance",
+        "parts_lookup": "Parts Lookup",
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions",
+        "tax_info": "Tax Information",
+        "shipping": "Shipping & Logistics",
+        "returns": "Return Policy"
+    },
+    "product_detail": {
+        "add_to_cart": "ADD TO CART",
+        "whatsapp_support": "EXPERT TECHNICAL CONSULTATION",
+        "request_quote": "PRICE UPON REQUEST",
+        "technical_specs": "TECHNICAL SPECS",
+        "cross_reference": "CROSS REFERENCE",
+        "logistics_info": "LOGISTICS INFO",
+        "primary_specs": "PRIMARY SPECIFICATIONS",
+        "system_id": "PART NUMBER",
+        "oem_ref": "OEM CROSS-REF",
+        "valuation_label": "UNIT VALUATION",
+        "aftermarket_guarantee": "Certified aftermarket component, performance guaranteed by Saudi Horizon.",
+        "warranty_label": "Quality Assurance",
+        "warranty_value": "2 Year Warranty",
+        "delivery_label": "Fast Delivery",
+        "delivery_value": "Saudi & Global",
+        "similar_components": "SIMILAR COMPONENTS",
+        "similar_subtitle": "Highly compatible parts from the {{category}} collection",
+        "back_to_catalog": "BACK TO CATALOG",
+        "interchangeability": "INTERCHANGEABILITY LIST",
+        "interchangeability_desc": "This technical component is compatible with the following industry reference numbers. Please verify with your machine's manual or contact a technical support specialist for confirmation assistance.",
+        "related_products": "RELATED COMPONENTS",
+        "technical_specs_pending": "Technical parameters pending verification"
+    },
+    "common": {
+        "language": "Language",
+        "brand_main": "Saudi",
+        "brand_accent": "Horizon",
+        "brand_subtitle": "Saudi Horizon Company",
+        "cr_number": "CR Number",
+        "vat_number": "VAT Number",
+        "licensed_in": "Licensed in Saudi Arabia",
+        "whatsapp_label": "WhatsApp",
+        "whatsapp_message": "Hi, I am interested in your products"
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "subtitle": "Your privacy and data security is our top priority",
+        "last_updated": "Last Updated: March 2026",
+        "intro": "Saudi Horizon for Heavy Equipment Solutions is committed to protecting your personal data in accordance with the Saudi Personal Data Protection Law (PDPL).",
+        "section1_title": "1. Information We Collect",
+        "section1_content": "We collect only information necessary to process your orders and provide technical support, including name, contact number, address, and vehicle/equipment details.",
+        "section2_title": "2. How We Use Your Info",
+        "section2_content": "Your information is used for completing purchases, tracking shipments, issuing tax invoices, and providing customized quotes for your industrial needs.",
+        "section3_title": "3. Data Security",
+        "section3_content": "We use advanced encryption technologies. No sensitive payment data is stored on our servers; it is processed via HyperPay, approved by the Saudi Central Bank (SAMA)."
+    },
+    "terms": {
+        "title": "Terms & Conditions",
+        "subtitle": "Legal agreement for using Saudi Horizon services",
+        "last_updated": "Last Updated: March 2026",
+        "section1_title": "1. Introduction",
+        "section1_content": "By using the Saudi Horizon website, you agree to these Terms and Conditions. These services are intended for heavy equipment parts and OEM components.",
+        "section2_title": "2. Orders & Pricing",
+        "section2_content": "All prices shown are subject to 15% VAT and are updated periodically based on the global availability of parts (ANC, Volvo, CAT, etc.).",
+        "section3_title": "3. Electronic Payments",
+        "section3_content": "Payments are accepted via mada, Visa, Mastercard, Apple Pay, and installments via Tabby/Tamara, as per SAMA regulations."
+    },
+    "returns": {
+        "title": "Returns & Refunds",
+        "subtitle": "Your rights are protected under Saudi E-Commerce regulations",
+        "last_updated": "Last Updated: March 2026",
+        "section1_title": "1. Right to Return (7 Days)",
+        "section1_content": "Under Saudi E-Commerce Law, consumers have the right to return and receive a refund within 7 days of receipt, provided the product is in its original condition.",
+        "section2_title": "2. Non-Returnable Items",
+        "section2_content": "Returns do not include parts that have been installed, electrical parts, or parts imported specifically for the customer's request.",
+        "section3_title": "3. Refund Process",
+        "section3_content": "Refunds are processed to the original payment method within 7-14 business days after inspecting the returned product."
+    },
+    "shipping": {
+        "title": "Shipping & Logistics",
+        "subtitle": "Fast delivery to all KSA regions and GCC countries",
+        "last_updated": "Last Updated: March 2026",
+        "section1_title": "1. Coverage Area",
+        "section1_content": "We ship to all cities across Saudi Arabia (Riyadh, Jeddah, Dammam, etc.) and GCC countries via certified logistics partners.",
+        "section2_title": "2. Delivery Time",
+        "section2_content": "Delivery within Riyadh takes 24-48 hours, while other KSA cities take 3-5 business days.",
+        "section3_title": "3. Shipping Costs",
+        "section3_content": "Costs are calculated based on weight (engines, turbos, hydraulic parts) and destination. Final costs appear at checkout."
+    },
+    "footer": {
+        "description": "Your trusted partner for all heavy equipment spare parts. ANC brand specialist for engine, turbocharger, electrical, and hydraulic parts.",
+        "company_title": "Company",
+        "products_title": "Our Products",
+        "contact_title": "Get In Touch",
+        "address": "Building 8550, Omar bin Al-Khattab Street, Dallah Industrial District, Dammam 34225, KSA",
+        "newsletter_text": "Stay updated with our latest stock arrivals.",
+        "newsletter_placeholder": "Engineering your inbox...",
+        "newsletter_success": "Thank you for subscribing to our newsletter!",
+        "industrial_note": "PROFESSIONAL INDUSTRIAL SOLUTIONS",
+        "cr_label": "CR",
+        "vat_label": "VAT",
+        "licensed_in": "Licensed in",
+        "secure_payments": "Secure Payments"
+    },
+    "home": {
+        "hero": {
+            "label": "SINCE 2009 — PREMIUM EQUIPMENT PARTS",
+            "title_main": "Engineered for",
+            "title_accent": "Performance",
+            "subtitle": "Genuine OEM and aftermarket spare parts for the world's toughest machines. Your equipment's reliability starts here.",
+            "cta_explore": "Explore Catalog",
+            "cta_quote": "Get Quote",
+            "trust_oem": "Genuine OEM Parts",
+            "trust_logistics": "Worldwide Logistics",
+            "trust_support": "24/7 Technical Support"
+        },
+        "features": {
+            "label": "WHY CHOOSE US",
+            "title": "Built Different",
+            "subtitle": "We're not just a parts supplier. We're your strategic partner in keeping heavy machinery running at peak performance.",
+            "oem_title": "OEM Genuine Parts",
+            "oem_desc": "Certified by original equipment manufacturers, guaranteeing exact fit and performance.",
+            "delivery_title": "Express Delivery",
+            "delivery_desc": "Critical parts delivered across the Middle East within 24 hours to minimize downtime.",
+            "support_title": "Technical Support",
+            "support_desc": "Seasoned engineers help you identify the right component—first time, every time.",
+            "install_title": "Expert Installation",
+            "install_desc": "Certified technicians available for on-site installation and maintenance.",
+            "logistics_title": "Global Logistics",
+            "logistics_desc": "Strategic freight partnerships ensure safe and timely deliveries worldwide.",
+            "qa_title": "Quality Assurance",
+            "qa_desc": "Rigorous inspection protocols and comprehensive warranties back every product.",
+            "learn_more": "Learn More"
+        },
+        "cta": {
+            "label": "READY TO OPTIMIZE?",
+            "title_prefix": "Powering Your ",
+            "title_accent": "Infrastructure",
+            "title_suffix": " Evolution",
+            "subtitle": "From critical engine components to heavy-duty undercarriage systems, we provide the industrial-grade parts that keep the Kingdom moving.",
+            "cta_consult": "Get Expert Consultation",
+            "cta_catalog": "Browse Full Catalog",
+            "oem_title": "OEM Certified",
+            "oem_desc": "Genuine parts guaranteed for performance.",
+            "logistics_title": "Fast Logistics",
+            "logistics_desc": "Rapid delivery across Saudi Arabia.",
+            "support_title": "Expert Support",
+            "support_desc": "Dedicated technical assistance 24/7.",
+            "response_time": "24 HR",
+            "response_label": "Inquiry Response"
+        },
+        "brands": {
+            "label": "SUPPORTING THE WORLD'S LEADING FLEETS"
+        },
+        "stats": {
+            "label": "OUR IMPACT",
+            "title": "Numbers That Speak",
+            "trust_note": "Trusted by construction leaders, mining operations, and industrial facilities worldwide.",
+            "experience": "Years of Excellence",
+            "experience_detail": "Serving the Middle East since 2009",
+            "clients": "Satisfied Clients",
+            "clients_detail": "Across construction & mining sectors",
+            "products": "Parts Available",
+            "products_detail": "Genuine OEM & aftermarket inventory",
+            "delivery": "On-Time Delivery",
+            "delivery_detail": "Minimizing operational downtime"
+        },
+        "categories": {
+            "label": "PRODUCT CATEGORIES",
+            "title": "Everything Your Equipment Needs",
+            "view_all": "View All Categories",
+            "items": "Items",
+            "explore": "Explore Category",
+            "engine": {
+                "name": "Engine Parts",
+                "desc": "Premium power solutions, filters, pumps & precision components"
+            },
+            "hydraulics": {
+                "name": "Hydraulic Systems",
+                "desc": "Industrial-grade cylinders, pumps, valves & reinforced hoses"
+            },
+            "electrical": {
+                "name": "Electrical Parts",
+                "desc": "Advanced starters, alternators, smart sensors & wiring looms"
+            },
+            "transmission": {
+                "name": "Transmission",
+                "desc": "Precision-engineered gears, torque converters & heavy-duty clutches"
+            },
+            "undercarriage": {
+                "name": "Undercarriage",
+                "desc": "Durable tracks, rollers, idlers & high-performance sprockets"
+            },
+            "attachments": {
+                "name": "Attachments",
+                "desc": "Specialized buckets, blades, hammers & quick couplers"
+            }
+        },
+        "console": {
+            "label": "Parts Intelligence v2.0",
+            "title_prefix": "Find the ",
+            "title_accent": "Exact",
+            "title_suffix": " Match for Your Fleet",
+            "subtitle": "Skip the manual search. Use our intelligent filtering console to match OEM and aftermarket components specifically to your machine model.",
+            "filter_label": "Instant Filter",
+            "filter_desc": "Zero latency database matching.",
+            "oem_label": "OEM Verified",
+            "oem_desc": "Serialized compatibility checks.",
+            "system_status": "System Online",
+            "step1_label": "01. Select Machine Type",
+            "step2_label": "02. Manufacturer",
+            "step3_label": "03. Component Type",
+            "all_brands": "All Brands",
+            "all_components": "All Components",
+            "search_btn": "INITIALIZE PARTS SEARCH",
+            "db_status": "DB_STATUS: CONNECTED",
+            "latency": "LATENCY: 12ms",
+            "ver_mod": "VER_MOD: RC-402",
+            "machine_types": {
+                "excavator": "Excavators",
+                "bulldozer": "Bulldozers",
+                "loader": "Wheel Loaders",
+                "grader": "Motor Graders"
+            }
+        },
+        "story": {
+            "label": "OUR MISSION & STORY",
+            "title_prefix": "Decades of ",
+            "title_accent": "Excellence",
+            "title_suffix": " in Heavy Equipment",
+            "p1": "Since 2009, Saudi Horizon has been the trusted name in heavy equipment parts across the Middle East. What started as a specialized parts supplier in Dammam has grown into a regional leader.",
+            "p2": "We understand that downtime costs thousands per hour. That's why we've built our entire operation around speed, reliability, and technical expertise.",
+            "stat1_label": "OEM Parts",
+            "stat2_label": "Support",
+            "stat3_label": "On-Time",
+            "cta": "Learn Our Story"
+        },
+        "testimonials": {
+            "label": "CLIENT SUCCESS STORIES",
+            "title_prefix": "Trusted by ",
+            "title_accent": "Industry Leaders",
+            "t1": {
+                "quote": "Saudi Horizon provided exceptional service in sourcing hard-to-find parts for our heavy machinery fleet. Their delivery speed minimized our downtime significantly.",
+                "author": "Fahad Al-Otaibi",
+                "role": "Operations Director",
+                "company": "Al-Otaibi Construction"
+            },
+            "t2": {
+                "quote": "The quality of the refurbished equipment we purchased was outstanding. It performs like new but at a fraction of the cost. Highly recommended partner.",
+                "author": "John Smith",
+                "role": "Fleet Manager",
+                "company": "Global Logistics Co."
+            },
+            "t3": {
+                "quote": "Their technical support team went above and beyond to help us identify the correct components for our vintage Caterpillar generators.",
+                "author": "Mohammed Asghar",
+                "role": "Chief Engineer",
+                "company": "Power Systems Ltd."
+            }
+        },
+        "products": {
+            "label": "FEATURED INVENTORY",
+            "title_prefix": "PREMIUM ",
+            "title_accent": "EQUIPMENT PARTS",
+            "subtitle": "Direct OEM replacements for major heavy equipment brands. Engineered for durability and maximum performance in extreme conditions.",
+            "price_starting": "Starting from",
+            "explore_catalog": "EXPLORE FULL CATALOG",
+            "new_badge": "NEW",
+            "fallback_category": "Machinery",
+            "fallback_description": "Professional grade component for industrial applications."
+        },
+        "news": {
+            "label": "NEWS & INSIGHTS",
+            "title_prefix": "Industrial ",
+            "title_accent": "Intelligence",
+            "view_all": "View All Articles",
+            "read_article": "Read Article",
+            "a1": {
+                "title": "Saudi Horizon Expands Inventory with New CAT Equipment Parts",
+                "excerpt": "We are proud to announce the expansion of our inventory to include over 500 new CAT equipment parts...",
+                "category": "Company News"
+            },
+            "a2": {
+                "title": "Top 5 Maintenance Tips for Heavy Machinery",
+                "excerpt": "Regular maintenance is crucial for the longevity and performance of your heavy machinery...",
+                "category": "Tips & Guides"
+            },
+            "a3": {
+                "title": "Understanding Hydraulic System Components",
+                "excerpt": "A comprehensive guide to understanding how hydraulic systems work and common issues to watch out for.",
+                "category": "Technical"
+            }
+        },
+        "faq": {
+            "label": "SUPPORT CENTER",
+            "title_prefix": "Expert ",
+            "title_accent": "Technical",
+            "title_suffix": " Support",
+            "subtitle": "Navigating complex industrial components can be challenging. Our technical team is here to provide clarity and ensure your operations remain uninterrupted.",
+            "help_title": "Still Have Questions?",
+            "help_subtitle": "Our engineers are available for immediate technical consultation.",
+            "chat_btn": "Chat with an expert",
+            "q1": {
+                "q": "How do I ensure part compatibility for my Caterpillar equipment?",
+                "a": "We offer advanced cross-referencing for all major OEM part numbers. Simply provide your machine serial number to our experts, and we will verify the exact fitment using our proprietary database, ensuring 100% compatibility before shipment."
+            },
+            "q2": {
+                "q": "What is the typical shipping lead time across the Kingdom?",
+                "a": "Our centralized distribution network in Riyadh allows for rapid fulfillment. Regular items are shipped within 24 hours, with typical delivery times of 1-3 business days depending on your location within Saudi Arabia."
+            },
+            "q3": {
+                "q": "Do you provide warranty coverage for hydraulic components?",
+                "a": "Yes, all our high-performance hydraulic systems and components come with a standard 12-month manufacturer warranty. We also offer extended protection plans for critical infrastructure projects, ensuring minimum downtime."
+            },
+            "q4": {
+                "q": "Can you source discontinued parts for older machinery models?",
+                "a": "Our global sourcing network specializes in identifying 'hard-to-find' and discontinued components for legacy fleets. We work directly with international manufacturers to procure or fabricate custom solutions that meet original specifications."
+            },
+            "q5": {
+                "q": "Are your engine parts genuine OEM or high-quality aftermarket?",
+                "a": "We supply both Genuine OEM and premium ISO-certified aftermarket components. Every part in our inventory undergoes rigorous quality control testing to ensure it meets or exceeds the original performance standards of your equipment."
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "nav": {
+        "home": "الرئيسية",
+        "spare_parts": "قطع الغيار",
+        "machinery": "الآلات",
+        "news": "الأخبار",
+        "about": "من نحن",
+        "contact": "اتصل بنا",
+        "cart": "عربة التسوق",
+        "login": "تسجيل الدخول",
+        "logout": "تسجيل الخروج",
+        "brands": "العلامات التجارية",
+        "services": "الخدمات",
+        "categories": "الفئات",
+        "orders": "الطلبات",
+        "installation": "خدمات التركيب",
+        "warranty": "الضمان",
+        "bulk_quote": "طلب عرض أسعار",
+        "maintenance": "الصيانة",
+        "parts_lookup": "بحث عن القطع",
+        "privacy": "سياسة الخصوصية",
+        "terms": "الشروط والأحكام",
+        "tax_info": "المعلومات الضريبية"
+    },
+    "common": {
+        "language": "اللغة",
+        "brand": "سعودي هورايزون"
+    },
+    "categories": {
+        "title": "فئات المنتجات",
+        "search_placeholder": "ابحث عن الفئات أو الأجزاء...",
+        "view_all": "تصفح جميع الفئات",
+        "no_results": "لم يتم العثور على فئات"
+    },
+    "privacy": {
+        "title": "سياسة الخصوصية",
+        "last_updated": "آخر تحديث: يناير 2025",
+        "info_we_collect": "المعلومات التي نجمعها",
+        "how_we_use": "كيف نستخدم معلوماتك",
+        "your_rights": "حقوقك",
+        "data_sharing": "مشاركة البيانات",
+        "contact": "اتصل بمسؤول الخصوصية"
+    },
+    "terms": {
+        "title": "الشروط والأحكام",
+        "last_updated": "آخر تحديث: يناير 2025",
+        "acceptance": "قبول الشروط",
+        "products_pricing": "المنتجات والأسعار",
+        "orders_payment": "الطلبات والدفع",
+        "shipping": "الشحن والتسليم",
+        "returns": "الإرجاع والاسترداد",
+        "warranty": "الضمان",
+        "contact": "اتصل بنا"
+    },
+    "tax_info": {
+        "title": "المعلومات الضريبية - المملكة العربية السعودية",
+        "vat_rate": "معدل ضريبة القيمة المضافة (15%)",
+        "invoice_requirements": "متطلبات الفاتورة الضريبية",
+        "zatca_compliance": "امتثال الهيئة العامة للزكاة والضريبة والجمارك",
+        "vat_registration": "معلومات التسجيل الضريبي",
+        "contact": "أسئلة حول VAT؟"
+    },
+    "orders": {
+        "title": "سجل الطلبات",
+        "all_orders": "جميع الطلبات",
+        "processing": "قيد المعالجة",
+        "shipped": "تم الشحن",
+        "delivered": "تم التسليم",
+        "no_orders": "لا توجد طلبات حتى الآن",
+        "browse_products": "تصفح المنتجات",
+        "view_details": "عرض التفاصيل",
+        "reorder": "إعادة الطلب",
+        "track": "تتبع"
+    },
+    "installation": {
+        "title": "خدمات تركيب المعدات",
+        "request_service": "طلب خدمة التركيب",
+        "service_areas": "مناطق الخدمة",
+        "equipment_type": "نوع المعدات",
+        "preferred_date": "التاريخ المفضل",
+        "contact": "اتصل بفريق التركيب"
+    },
+    "warranty": {
+        "title": "معلومات الضمان",
+        "coverage": "التغطية حسب الفئة",
+        "claim_process": "عملية مطالبة الضمان",
+        "extended_plans": "خطط الضمان الممتد",
+        "file_claim": "تقديم مطالبة"
+    },
+    "bulk_quote": {
+        "title": "طلب عرض أسعار للجملة",
+        "volume_discounts": "خصومات الكمية",
+        "request_quote": "طلب عرض أسعار",
+        "b2b_benefits": "فوائد B2B",
+        "contact": "تفضل بالتحدث مباشرة؟"
+    },
+    "maintenance": {
+        "title": "خدمات الصيانة",
+        "service_plans": "خطط العقود",
+        "maintenance_tips": "جدول الصيانة",
+        "service_coverage": "تغطية الخدمة",
+        "emergency": "خدمة الطوارئ"
+    },
+    "parts_lookup": {
+        "title": "البحث عن القطع",
+        "by_machine": "حسب الماكينة",
+        "by_vin": "حسب رقم الهيكل",
+        "by_part": "حسب رقم القطعة",
+        "cross_reference": "مرجع متقاطع",
+        "contact_specialist": "اتصل بأخصائي القطع"
+    }
+}

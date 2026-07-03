@@ -1,0 +1,836 @@
+# Part Configurator Integration Design Document
+
+## Executive Summary
+
+This document outlines the comprehensive design for integrating a Part Configurator module into the existing industrial parts catalog system. The Part Configurator will enable users to find compatible parts based on their specific equipment, enhancing the user experience and improving part discovery accuracy.
+
+## 1. Part Configurator Component Architecture
+
+### 1.1 Component Hierarchy
+
+```mermaid
+graph TD
+    A[ProductsPageClient] --> B[FilterSidebar]
+    A --> C[PartConfigurator]
+    A --> D[ProductCard]
+    
+    C --> E[EquipmentSelector]
+    C --> F[CompatibilityFilter]
+    C --> G[PartResults]
+    C --> H[CompatibilityMatrix]
+    
+    E --> I[EquipmentSearch]
+    E --> J[EquipmentBrowse]
+    E --> K[EquipmentCard]
+    
+    F --> L[CompatibilityStatus]
+    F --> M[CompatibilityInfo]
+    
+    G --> N[PartCard]
+    G --> O[PartDetails]
+    
+    H --> P[CompatibilityTable]
+    H --> Q[CompatibilityChart]
+```
+
+### 1.2 Component Structure
+
+#### 1.2.1 PartConfigurator (Main Component)
+- **Purpose**: Central component managing the Part Configurator state and UI
+- **Props**:
+  - `isOpen: boolean` - Controls visibility
+  - `onClose: () => void` - Callback for closing
+  - `onEquipmentSelect: (equipment: Equipment) => void` - Equipment selection callback
+  - `selectedEquipment?: Equipment | null` - Currently selected equipment
+  - `filters: FilterState` - Current filter state
+  - `onFilterChange: (filters: FilterState) => void` - Filter change callback
+- **State**:
+  - `selectedEquipment: Equipment | null`
+  - `compatibleParts: Part[]`
+  - `compatibilityMatrix: CompatibilityMatrix`
+  - `isConfiguratorOpen: boolean`
+  - `activeFilters: FilterState`
+
+#### 1.2.2 EquipmentSelector
+- **Purpose**: Equipment selection interface with search and browse modes
+- **Props**:
+  - `equipmentData: EquipmentData`
+  - `onEquipmentSelect: (equipment: Equipment) => void`
+  - `selectedEquipment?: Equipment | null`
+- **State**:
+  - `mode: 'search' | 'browse'`
+  - `searchQuery: string`
+  - `selectedType: string`
+  - `selectedBrand: string`
+  - `selectedModel: string`
+  - `selectedYearRange: string`
+
+#### 1.2.3 CompatibilityFilter
+- **Purpose**: Advanced filter for compatibility-based part filtering
+- **Props**:
+  - `selectedEquipment?: Equipment | null`
+  - `filters: FilterState`
+  - `onFilterChange: (filters: FilterState) => void`
+  - `compatibilityStatus: 'all' | 'compatible' | 'incompatible'`
+  - `onCompatibilityChange: (status: CompatibilityStatus) => void`
+- **State**:
+  - `compatibilityStatus: 'all' | 'compatible' | 'incompatible'`
+  - `showCompatibilityInfo: boolean`
+
+#### 1.2.4 PartResults
+- **Purpose**: Display compatible parts with filtering and sorting
+- **Props**:
+  - `parts: Part[]`
+  - `filters: FilterState`
+  - `onFilterChange: (filters: FilterState) => void`
+  - `selectedEquipment?: Equipment | null`
+- **State**:
+  - `filteredParts: Part[]`
+  - `sortBy: 'relevance' | 'price' | 'rating' | 'compatibility'`
+  - `viewMode: 'grid' | 'list'`
+
+#### 1.2.5 CompatibilityMatrix
+- **Purpose**: Visual representation of part compatibility
+- **Props**:
+  - `parts: Part[]`
+  - `selectedEquipment?: Equipment | null`
+  - `compatibilityMatrix: CompatibilityMatrix`
+- **State**:
+  - `selectedPart: Part | null`
+  - `showDetails: boolean`
+
+## 2. Filter Integration Strategy
+
+### 2.1 Filter State Management
+
+The Part Configurator will integrate with the existing filter system through a unified state management approach:
+
+```typescript
+interface FilterState {
+  brands: string[];
+  categories: string[];
+  priceRange: [number, number];
+  search: string;
+  compatibility: {
+    status: 'all' | 'compatible' | 'incompatible';
+    selectedEquipment?: Equipment;
+  };
+  availability: 'all' | 'in-stock' | 'out-of-stock';
+}
+```
+
+### 2.2 Data Flow Architecture
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant ProductsPageClient
+    participant FilterSidebar
+    participant PartConfigurator
+    participant API
+    
+    User->>ProductsPageClient: Select Equipment
+    ProductsPageClient->>PartConfigurator: Set selectedEquipment
+    PartConfigurator->>API: Fetch compatible parts
+    API-->>PartConfigurator: Return compatible parts
+    PartConfigurator-->>ProductsPageClient: Update compatible parts
+    ProductsPageClient-->>FilterSidebar: Update filters
+    
+    User->>FilterSidebar: Apply filters
+    FilterSidebar->>ProductsPageClient: Update filter state
+    ProductsPageClient->>PartConfigurator: Update filters
+    PartConfigurator->>API: Fetch filtered compatible parts
+```
+
+### 2.3 UI/UX Integration
+
+#### 2.3.1 Filter Sidebar Integration
+- **Compatibility Filter Section**: Added to the existing filter sidebar
+- **Equipment Selection Display**: Shows currently selected equipment
+- **Filter Priority**: Compatibility filters take precedence over standard filters
+
+#### 2.3.2 Product Cards Enhancement
+- **Compatibility Badge**: Indicates compatibility status
+- **Compatibility Details**: Hover/click to show compatibility information
+- **Quick Compatibility Check**: Inline compatibility verification
+
+## 3. Data Flow Design
+
+### 3.1 Data Structures
+
+#### 3.1.1 Equipment Interface
+```typescript
+interface Equipment {
+  id: string;
+  type: string;
+  typeName: string;
+  brand: string;
+  brandId: string;
+  model: string;
+  modelId: string;
+  yearRange?: string;
+  compatibilityId: string;
+  systems: string[];
+}
+```
+
+#### 3.1.2 Part Interface
+```typescript
+interface Part {
+  _id: string;
+  name: string;
+  sku: string;
+  brand: string;
+  category: string;
+  price: number;
+  image: string;
+  description: string;
+  specs: Record<string, string>;
+  compatibility: string[];
+  inStock: boolean;
+  stock: number;
+  rating: number;
+  reviews: number;
+  oemCode: string;
+  compatibilityScore: number;
+  compatibilityStatus: 'compatible' | 'incompatible' | 'unknown';
+}
+```
+
+#### 3.1.3 Compatibility Matrix
+```typescript
+interface CompatibilityMatrix {
+  [partId: string]: {
+    equipmentId: string;
+    compatibilityScore: number;
+    compatibilityReasons: string[];
+    compatibilityStatus: 'compatible' | 'incompatible' | 'unknown';
+  };
+}
+```
+
+### 3.2 Data Fetching Strategy
+
+#### 3.2.1 API Endpoints
+```typescript
+// Fetch compatible parts for specific equipment
+GET /api/parts/compatible?equipmentId={equipmentId}&filters={filters}
+
+// Get compatibility information for specific part
+GET /api/parts/{partId}/compatibility?equipmentId={equipmentId}
+
+// Batch compatibility check
+POST /api/parts/compatibility/check
+{
+  equipmentId: string;
+  partIds: string[];
+}
+```
+
+#### 3.2.2 Caching Strategy
+- **Equipment Data**: Cached in localStorage with TTL
+- **Compatibility Matrix**: Server-side caching with Redis
+- **Part Data**: Incremental updates with cache invalidation
+
+### 3.3 Compatibility Matching Logic
+
+#### 3.3.1 Compatibility Scoring Algorithm
+```typescript
+function calculateCompatibilityScore(
+  part: Part,
+  equipment: Equipment,
+  equipmentDatabase: EquipmentDatabase
+): number {
+  const baseScore = 50;
+  
+  // Brand match bonus
+  const brandBonus = part.brand === equipment.brand ? 20 : 0;
+  
+  // Category match bonus
+  const categoryBonus = part.category === equipment.type ? 15 : 0;
+  
+  // Direct compatibility match
+  const directMatch = part.compatibility.includes(equipment.compatibilityId) ? 30 : 0;
+  
+  // System compatibility check
+  const systemCompatibility = calculateSystemCompatibility(part, equipment, equipmentDatabase);
+  
+  return baseScore + brandBonus + categoryBonus + directMatch + systemCompatibility;
+}
+```
+
+#### 3.3.2 System Compatibility Check
+```typescript
+function calculateSystemCompatibility(
+  part: Part,
+  equipment: Equipment,
+  equipmentDatabase: EquipmentDatabase
+): number {
+  const compatibleSystems = equipmentDatabase.systems.filter(system => 
+    part.compatibility.some(comp => 
+      equipmentDatabase[system].includes(comp)
+    )
+  );
+  
+  return compatibleSystems.length * 5; // 5 points per compatible system
+}
+```
+
+## 4. Technical Implementation Details
+
+### 4.1 Component Interfaces
+
+#### 4.1.1 PartConfigurator Props
+```typescript
+interface PartConfiguratorProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onEquipmentSelect: (equipment: Equipment | null) => void;
+  selectedEquipment?: Equipment | null;
+  filters: FilterState;
+  onFilterChange: (filters: FilterState) => void;
+  products: Product[];
+  onProductsUpdate: (products: Product[]) => void;
+}
+```
+
+#### 4.1.2 EquipmentSelector Props
+```typescript
+interface EquipmentSelectorProps {
+  equipmentData: EquipmentData;
+  onEquipmentSelect: (equipment: Equipment | null) => void;
+  selectedEquipment?: Equipment | null;
+  onModeChange?: (mode: 'search' | 'browse') => void;
+}
+```
+
+### 4.2 State Management Approach
+
+#### 4.2.1 Local State Management
+- **React Hooks**: useState, useEffect, useMemo for component-level state
+- **Context API**: For global state sharing between components
+- **Custom Hooks**: For complex state logic and side effects
+
+#### 4.2.2 Global State Management
+```typescript
+// PartConfiguratorContext
+interface PartConfiguratorContextType {
+  selectedEquipment: Equipment | null;
+  compatibleParts: Part[];
+  compatibilityMatrix: CompatibilityMatrix;
+  filters: FilterState;
+  setFilters: (filters: FilterState) => void;
+  setEquipment: (equipment: Equipment | null) => void;
+  clearEquipment: () => void;
+}
+```
+
+### 4.3 Performance Considerations
+
+#### 4.3.1 Optimization Strategies
+- **Virtual Scrolling**: For large part result lists
+- **Debounced Search**: For equipment search functionality
+- **Memoization**: For expensive compatibility calculations
+- **Lazy Loading**: For compatibility matrix data
+
+#### 4.3.2 Bundle Size Optimization
+- **Code Splitting**: Separate chunks for Part Configurator
+- **Tree Shaking**: Remove unused code from dependencies
+- **Dynamic Imports**: Load heavy components on demand
+
+### 4.4 Error Handling and Edge Cases
+
+#### 4.4.1 Error Boundaries
+- **Component-Level Errors**: Graceful degradation for individual components
+- **API Error Handling**: Retry logic and user-friendly error messages
+- **Data Validation**: Schema validation for incoming data
+
+#### 4.4.2 Edge Case Handling
+- **No Compatible Parts**: User-friendly messaging and suggestions
+- **Multiple Equipment Selection**: Support for comparing compatibility across equipment
+- **Offline Mode**: Cached compatibility data for offline use
+
+## 5. Implementation Phases
+
+### Phase 1: Core Integration (Week 1-2)
+- [ ] Create PartConfigurator component structure
+- [ ] Integrate with existing filter system
+- [ ] Implement basic equipment selection
+- [ ] Add compatibility filtering
+
+### Phase 2: Advanced Features (Week 3-4)
+- [ ] Implement compatibility matrix visualization
+- [ ] Add compatibility scoring algorithm
+- [ ] Enhance product cards with compatibility info
+- [ ] Implement batch compatibility checking
+
+### Phase 3: Performance & Polish (Week 5-6)
+- [ ] Optimize performance with virtual scrolling
+- [ ] Implement caching strategies
+- [ ] Add error boundaries and loading states
+- [ ] Polish UI/UX with animations and transitions
+
+### Phase 4: Testing & Deployment (Week 7)
+- [ ] Comprehensive testing (unit, integration, E2E)
+- [ ] Performance testing and optimization
+- [ ] Accessibility audit and improvements
+- [ ] Production deployment and monitoring
+
+## 6. Success Metrics
+
+### 6.1 User Engagement Metrics
+- **Equipment Selection Rate**: % of users using the configurator
+- **Compatibility Filter Usage**: Frequency of compatibility-based filtering
+- **Part Discovery Rate**: Increase in parts found through configurator
+
+### 6.2 Performance Metrics
+- **Load Time**: < 2 seconds for configurator initialization
+- **Search Performance**: < 500ms for equipment search
+- **Compatibility Calculation**: < 100ms per part
+
+### 6.3 Business Impact Metrics
+- **Conversion Rate**: Increase in completed purchases
+- **Average Order Value**: Impact on cart size
+- **Customer Satisfaction**: Improvement in user feedback
+
+## 7. Risk Assessment and Mitigation
+
+### 7.1 Technical Risks
+- **Performance Issues**: Mitigated through optimization and caching
+- **Data Inconsistency**: Addressed with validation and error handling
+- **Browser Compatibility**: Tested across target browsers
+
+### 7.2 User Experience Risks
+- **Complexity**: Mitigated through intuitive design and progressive disclosure
+- **Learning Curve**: Addressed with onboarding and tooltips
+- **Performance Perception**: Optimized for fast interactions
+
+### 7.3 Business Risks
+- **Implementation Cost**: Managed through phased approach
+- **User Adoption**: Driven by clear value proposition
+- **Maintenance Overhead**: Minimized through modular architecture
+
+## 8. Conclusion
+
+The Part Configurator integration represents a significant enhancement to the existing parts catalog system. By providing intelligent compatibility-based part discovery, we can dramatically improve the user experience, increase conversion rates, and establish a competitive advantage in the industrial parts market.
+
+The proposed architecture is modular, scalable, and designed to integrate seamlessly with the existing codebase. The phased implementation approach allows for iterative development and continuous value delivery.
+
+This design provides a solid foundation for building a world-class part configurator that will serve as a key differentiator in the industrial parts e-commerce space.
+## Executive Summary
+
+This document outlines the comprehensive design for integrating a Part Configurator module into the existing industrial parts catalog system. The Part Configurator will enable users to find compatible parts based on their specific equipment, enhancing the user experience and improving part discovery accuracy.
+
+## 1. Part Configurator Component Architecture
+
+### 1.1 Component Hierarchy
+
+```mermaid
+graph TD
+    A[ProductsPageClient] --> B[FilterSidebar]
+    A --> C[PartConfigurator]
+    A --> D[ProductCard]
+    
+    C --> E[EquipmentSelector]
+    C --> F[CompatibilityFilter]
+    C --> G[PartResults]
+    C --> H[CompatibilityMatrix]
+    
+    E --> I[EquipmentSearch]
+    E --> J[EquipmentBrowse]
+    E --> K[EquipmentCard]
+    
+    F --> L[CompatibilityStatus]
+    F --> M[CompatibilityInfo]
+    
+    G --> N[PartCard]
+    G --> O[PartDetails]
+    
+    H --> P[CompatibilityTable]
+    H --> Q[CompatibilityChart]
+```
+
+### 1.2 Component Structure
+
+#### 1.2.1 PartConfigurator (Main Component)
+- **Purpose**: Central component managing the Part Configurator state and UI
+- **Props**:
+  - `isOpen: boolean` - Controls visibility
+  - `onClose: () => void` - Callback for closing
+  - `onEquipmentSelect: (equipment: Equipment) => void` - Equipment selection callback
+  - `selectedEquipment?: Equipment | null` - Currently selected equipment
+  - `filters: FilterState` - Current filter state
+  - `onFilterChange: (filters: FilterState) => void` - Filter change callback
+- **State**:
+  - `selectedEquipment: Equipment | null`
+  - `compatibleParts: Part[]`
+  - `compatibilityMatrix: CompatibilityMatrix`
+  - `isConfiguratorOpen: boolean`
+  - `activeFilters: FilterState`
+
+#### 1.2.2 EquipmentSelector
+- **Purpose**: Equipment selection interface with search and browse modes
+- **Props**:
+  - `equipmentData: EquipmentData`
+  - `onEquipmentSelect: (equipment: Equipment) => void`
+  - `selectedEquipment?: Equipment | null`
+- **State**:
+  - `mode: 'search' | 'browse'`
+  - `searchQuery: string`
+  - `selectedType: string`
+  - `selectedBrand: string`
+  - `selectedModel: string`
+  - `selectedYearRange: string`
+
+#### 1.2.3 CompatibilityFilter
+- **Purpose**: Advanced filter for compatibility-based part filtering
+- **Props**:
+  - `selectedEquipment?: Equipment | null`
+  - `filters: FilterState`
+  - `onFilterChange: (filters: FilterState) => void`
+  - `compatibilityStatus: 'all' | 'compatible' | 'incompatible'`
+  - `onCompatibilityChange: (status: CompatibilityStatus) => void`
+- **State**:
+  - `compatibilityStatus: 'all' | 'compatible' | 'incompatible'`
+  - `showCompatibilityInfo: boolean`
+
+#### 1.2.4 PartResults
+- **Purpose**: Display compatible parts with filtering and sorting
+- **Props**:
+  - `parts: Part[]`
+  - `filters: FilterState`
+  - `onFilterChange: (filters: FilterState) => void`
+  - `selectedEquipment?: Equipment | null`
+- **State**:
+  - `filteredParts: Part[]`
+  - `sortBy: 'relevance' | 'price' | 'rating' | 'compatibility'`
+  - `viewMode: 'grid' | 'list'`
+
+#### 1.2.5 CompatibilityMatrix
+- **Purpose**: Visual representation of part compatibility
+- **Props**:
+  - `parts: Part[]`
+  - `selectedEquipment?: Equipment | null`
+  - `compatibilityMatrix: CompatibilityMatrix`
+- **State**:
+  - `selectedPart: Part | null`
+  - `showDetails: boolean`
+
+## 2. Filter Integration Strategy
+
+### 2.1 Filter State Management
+
+The Part Configurator will integrate with the existing filter system through a unified state management approach:
+
+```typescript
+interface FilterState {
+  brands: string[];
+  categories: string[];
+  priceRange: [number, number];
+  search: string;
+  compatibility: {
+    status: 'all' | 'compatible' | 'incompatible';
+    selectedEquipment?: Equipment;
+  };
+  availability: 'all' | 'in-stock' | 'out-of-stock';
+}
+```
+
+### 2.2 Data Flow Architecture
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant ProductsPageClient
+    participant FilterSidebar
+    participant PartConfigurator
+    participant API
+    
+    User->>ProductsPageClient: Select Equipment
+    ProductsPageClient->>PartConfigurator: Set selectedEquipment
+    PartConfigurator->>API: Fetch compatible parts
+    API-->>PartConfigurator: Return compatible parts
+    PartConfigurator-->>ProductsPageClient: Update compatible parts
+    ProductsPageClient-->>FilterSidebar: Update filters
+    
+    User->>FilterSidebar: Apply filters
+    FilterSidebar->>ProductsPageClient: Update filter state
+    ProductsPageClient->>PartConfigurator: Update filters
+    PartConfigurator->>API: Fetch filtered compatible parts
+```
+
+### 2.3 UI/UX Integration
+
+#### 2.3.1 Filter Sidebar Integration
+- **Compatibility Filter Section**: Added to the existing filter sidebar
+- **Equipment Selection Display**: Shows currently selected equipment
+- **Filter Priority**: Compatibility filters take precedence over standard filters
+
+#### 2.3.2 Product Cards Enhancement
+- **Compatibility Badge**: Indicates compatibility status
+- **Compatibility Details**: Hover/click to show compatibility information
+- **Quick Compatibility Check**: Inline compatibility verification
+
+## 3. Data Flow Design
+
+### 3.1 Data Structures
+
+#### 3.1.1 Equipment Interface
+```typescript
+interface Equipment {
+  id: string;
+  type: string;
+  typeName: string;
+  brand: string;
+  brandId: string;
+  model: string;
+  modelId: string;
+  yearRange?: string;
+  compatibilityId: string;
+  systems: string[];
+}
+```
+
+#### 3.1.2 Part Interface
+```typescript
+interface Part {
+  _id: string;
+  name: string;
+  sku: string;
+  brand: string;
+  category: string;
+  price: number;
+  image: string;
+  description: string;
+  specs: Record<string, string>;
+  compatibility: string[];
+  inStock: boolean;
+  stock: number;
+  rating: number;
+  reviews: number;
+  oemCode: string;
+  compatibilityScore: number;
+  compatibilityStatus: 'compatible' | 'incompatible' | 'unknown';
+}
+```
+
+#### 3.1.3 Compatibility Matrix
+```typescript
+interface CompatibilityMatrix {
+  [partId: string]: {
+    equipmentId: string;
+    compatibilityScore: number;
+    compatibilityReasons: string[];
+    compatibilityStatus: 'compatible' | 'incompatible' | 'unknown';
+  };
+}
+```
+
+### 3.2 Data Fetching Strategy
+
+#### 3.2.1 API Endpoints
+```typescript
+// Fetch compatible parts for specific equipment
+GET /api/parts/compatible?equipmentId={equipmentId}&filters={filters}
+
+// Get compatibility information for specific part
+GET /api/parts/{partId}/compatibility?equipmentId={equipmentId}
+
+// Batch compatibility check
+POST /api/parts/compatibility/check
+{
+  equipmentId: string;
+  partIds: string[];
+}
+```
+
+#### 3.2.2 Caching Strategy
+- **Equipment Data**: Cached in localStorage with TTL
+- **Compatibility Matrix**: Server-side caching with Redis
+- **Part Data**: Incremental updates with cache invalidation
+
+### 3.3 Compatibility Matching Logic
+
+#### 3.3.1 Compatibility Scoring Algorithm
+```typescript
+function calculateCompatibilityScore(
+  part: Part,
+  equipment: Equipment,
+  equipmentDatabase: EquipmentDatabase
+): number {
+  const baseScore = 50;
+  
+  // Brand match bonus
+  const brandBonus = part.brand === equipment.brand ? 20 : 0;
+  
+  // Category match bonus
+  const categoryBonus = part.category === equipment.type ? 15 : 0;
+  
+  // Direct compatibility match
+  const directMatch = part.compatibility.includes(equipment.compatibilityId) ? 30 : 0;
+  
+  // System compatibility check
+  const systemCompatibility = calculateSystemCompatibility(part, equipment, equipmentDatabase);
+  
+  return baseScore + brandBonus + categoryBonus + directMatch + systemCompatibility;
+}
+```
+
+#### 3.3.2 System Compatibility Check
+```typescript
+function calculateSystemCompatibility(
+  part: Part,
+  equipment: Equipment,
+  equipmentDatabase: EquipmentDatabase
+): number {
+  const compatibleSystems = equipmentDatabase.systems.filter(system => 
+    part.compatibility.some(comp => 
+      equipmentDatabase[system].includes(comp)
+    )
+  );
+  
+  return compatibleSystems.length * 5; // 5 points per compatible system
+}
+```
+
+## 4. Technical Implementation Details
+
+### 4.1 Component Interfaces
+
+#### 4.1.1 PartConfigurator Props
+```typescript
+interface PartConfiguratorProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onEquipmentSelect: (equipment: Equipment | null) => void;
+  selectedEquipment?: Equipment | null;
+  filters: FilterState;
+  onFilterChange: (filters: FilterState) => void;
+  products: Product[];
+  onProductsUpdate: (products: Product[]) => void;
+}
+```
+
+#### 4.1.2 EquipmentSelector Props
+```typescript
+interface EquipmentSelectorProps {
+  equipmentData: EquipmentData;
+  onEquipmentSelect: (equipment: Equipment | null) => void;
+  selectedEquipment?: Equipment | null;
+  onModeChange?: (mode: 'search' | 'browse') => void;
+}
+```
+
+### 4.2 State Management Approach
+
+#### 4.2.1 Local State Management
+- **React Hooks**: useState, useEffect, useMemo for component-level state
+- **Context API**: For global state sharing between components
+- **Custom Hooks**: For complex state logic and side effects
+
+#### 4.2.2 Global State Management
+```typescript
+// PartConfiguratorContext
+interface PartConfiguratorContextType {
+  selectedEquipment: Equipment | null;
+  compatibleParts: Part[];
+  compatibilityMatrix: CompatibilityMatrix;
+  filters: FilterState;
+  setFilters: (filters: FilterState) => void;
+  setEquipment: (equipment: Equipment | null) => void;
+  clearEquipment: () => void;
+}
+```
+
+### 4.3 Performance Considerations
+
+#### 4.3.1 Optimization Strategies
+- **Virtual Scrolling**: For large part result lists
+- **Debounced Search**: For equipment search functionality
+- **Memoization**: For expensive compatibility calculations
+- **Lazy Loading**: For compatibility matrix data
+
+#### 4.3.2 Bundle Size Optimization
+- **Code Splitting**: Separate chunks for Part Configurator
+- **Tree Shaking**: Remove unused code from dependencies
+- **Dynamic Imports**: Load heavy components on demand
+
+### 4.4 Error Handling and Edge Cases
+
+#### 4.4.1 Error Boundaries
+- **Component-Level Errors**: Graceful degradation for individual components
+- **API Error Handling**: Retry logic and user-friendly error messages
+- **Data Validation**: Schema validation for incoming data
+
+#### 4.4.2 Edge Case Handling
+- **No Compatible Parts**: User-friendly messaging and suggestions
+- **Multiple Equipment Selection**: Support for comparing compatibility across equipment
+- **Offline Mode**: Cached compatibility data for offline use
+
+## 5. Implementation Phases
+
+### Phase 1: Core Integration (Week 1-2)
+- [ ] Create PartConfigurator component structure
+- [ ] Integrate with existing filter system
+- [ ] Implement basic equipment selection
+- [ ] Add compatibility filtering
+
+### Phase 2: Advanced Features (Week 3-4)
+- [ ] Implement compatibility matrix visualization
+- [ ] Add compatibility scoring algorithm
+- [ ] Enhance product cards with compatibility info
+- [ ] Implement batch compatibility checking
+
+### Phase 3: Performance & Polish (Week 5-6)
+- [ ] Optimize performance with virtual scrolling
+- [ ] Implement caching strategies
+- [ ] Add error boundaries and loading states
+- [ ] Polish UI/UX with animations and transitions
+
+### Phase 4: Testing & Deployment (Week 7)
+- [ ] Comprehensive testing (unit, integration, E2E)
+- [ ] Performance testing and optimization
+- [ ] Accessibility audit and improvements
+- [ ] Production deployment and monitoring
+
+## 6. Success Metrics
+
+### 6.1 User Engagement Metrics
+- **Equipment Selection Rate**: % of users using the configurator
+- **Compatibility Filter Usage**: Frequency of compatibility-based filtering
+- **Part Discovery Rate**: Increase in parts found through configurator
+
+### 6.2 Performance Metrics
+- **Load Time**: < 2 seconds for configurator initialization
+- **Search Performance**: < 500ms for equipment search
+- **Compatibility Calculation**: < 100ms per part
+
+### 6.3 Business Impact Metrics
+- **Conversion Rate**: Increase in completed purchases
+- **Average Order Value**: Impact on cart size
+- **Customer Satisfaction**: Improvement in user feedback
+
+## 7. Risk Assessment and Mitigation
+
+### 7.1 Technical Risks
+- **Performance Issues**: Mitigated through optimization and caching
+- **Data Inconsistency**: Addressed with validation and error handling
+- **Browser Compatibility**: Tested across target browsers
+
+### 7.2 User Experience Risks
+- **Complexity**: Mitigated through intuitive design and progressive disclosure
+- **Learning Curve**: Addressed with onboarding and tooltips
+- **Performance Perception**: Optimized for fast interactions
+
+### 7.3 Business Risks
+- **Implementation Cost**: Managed through phased approach
+- **User Adoption**: Driven by clear value proposition
+- **Maintenance Overhead**: Minimized through modular architecture
+
+## 8. Conclusion
+
+The Part Configurator integration represents a significant enhancement to the existing parts catalog system. By providing intelligent compatibility-based part discovery, we can dramatically improve the user experience, increase conversion rates, and establish a competitive advantage in the industrial parts market.
+
+The proposed architecture is modular, scalable, and designed to integrate seamlessly with the existing codebase. The phased implementation approach allows for iterative development and continuous value delivery.
+
+This design provides a solid foundation for building a world-class part configurator that will serve as a key differentiator in the industrial parts e-commerce space.

@@ -1,0 +1,96 @@
+import { MetadataRoute } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://saudihorizon.com';
+
+export default function robots(): MetadataRoute.Robots {
+    return {
+        rules: [
+            {
+                userAgent: '*',
+                allow: [
+                    '/',
+                    '/products',
+                    '/about',
+                    '/contact',
+                    '/news',
+                    '/cart',
+                    '/login',
+                    '/register',
+                    '/stores',
+                    '/shipping',
+                    '/returns',
+                    '/help',
+                    '/promotions',
+                    '/wishlist',
+                ],
+                disallow: [
+                    '/admin',
+                    '/api',
+                    '/checkout',
+                    '/account',
+                    '/_next',
+                    '/static',
+                    '/public',
+                ],
+            },
+            {
+                userAgent: 'Googlebot',
+                allow: [
+                    '/',
+                    '/products',
+                    '/about',
+                    '/contact',
+                    '/news',
+                    '/cart',
+                    '/login',
+                    '/register',
+                    '/stores',
+                    '/shipping',
+                    '/returns',
+                    '/help',
+                    '/promotions',
+                    '/wishlist',
+                ],
+                disallow: [
+                    '/admin',
+                    '/api',
+                    '/checkout',
+                    '/account',
+                    '/_next',
+                    '/static',
+                    '/public',
+                ],
+            },
+            {
+                userAgent: 'Bingbot',
+                allow: [
+                    '/',
+                    '/products',
+                    '/about',
+                    '/contact',
+                    '/news',
+                    '/cart',
+                    '/login',
+                    '/register',
+                    '/stores',
+                    '/shipping',
+                    '/returns',
+                    '/help',
+                    '/promotions',
+                    '/wishlist',
+                ],
+                disallow: [
+                    '/admin',
+                    '/api',
+                    '/checkout',
+                    '/account',
+                    '/_next',
+                    '/static',
+                    '/public',
+                ],
+            },
+        ],
+        sitemap: `${baseUrl}/sitemap.xml`,
+        host: baseUrl,
+    };
+}

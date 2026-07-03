@@ -1,0 +1,4334 @@
+[
+  {
+    "name": "GEAR ANNULUS RING SET",
+    "sku": "ANC- 450/10205-6-2403",
+    "price": 254,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "OIL FILTER CANISTER",
+    "sku": "ANC-02/100073",
+    "price": 418,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "TRANSMISSION OIL FILTER",
+    "sku": "ANC-02/100284",
+    "price": 137,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "SEAL FRONT OIL",
+    "sku": "ANC-02/101435",
+    "price": 333,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "KIT-GASKET TOP AB ENGINE",
+    "sku": "ANC-02/200184",
+    "price": 493,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "CAP OIL FILLER",
+    "sku": "ANC-02/201343",
+    "price": 93,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "PUMP WATER AB ENGINE",
+    "sku": "ANC-02/201630",
+    "price": 429,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "KIT-GASKET TOP AK ENGINE",
+    "sku": "ANC-02/201849",
+    "price": 543,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "PUMP WATER AK ENGINE",
+    "sku": "ANC-02/202110",
+    "price": 318,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "HOSE OIL COOLER",
+    "sku": "ANC-02/202336",
+    "price": 266,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "AK ENGINE GUIDE EXHAUST\r\nVALVE",
+    "sku": "ANC-02-202064",
+    "price": 355,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "TORQUE CONVERTER",
+    "sku": "ANC-04/501400N",
+    "price": 240,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "CONVERTER W300 2.52 RATIO",
+    "sku": "ANC-04/600784",
+    "price": 112,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "SPRING BUSH-ROD END",
+    "sku": "ANC-1208/0015",
+    "price": 474,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "BUSH SPRING / SHOVEL",
+    "sku": "ANC-1208/0023",
+    "price": 154,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "BUSH",
+    "sku": "ANC-1209/0017",
+    "price": 265,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "RADIATOR CAP OLD MODEL",
+    "sku": "ANC-121/60601",
+    "price": 92,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "TRANSMISSION PUMP",
+    "sku": "ANC-1217385",
+    "price": 535,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "TRANSMISSION PUMP",
+    "sku": "ANC-1217385,121-7385",
+    "price": 217,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "MOUNTING RUBBER",
+    "sku": "ANC-123/00526",
+    "price": 172,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "LOCK DOOR LEFT HAND OLDMODEL",
+    "sku": "ANC-123/02450",
+    "price": 215,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "LOCK DOOR RIGHT HAND OLDMODEL",
+    "sku": "ANC-123/02451",
+    "price": 84,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "MıRROR",
+    "sku": "ANC-123/04970A",
+    "price": 466,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "STRUT DOOR STAY 340X110 O.M",
+    "sku": "ANC-123/05403",
+    "price": 490,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "STRUT DOOR STAY 340 X 110",
+    "sku": "ANC-123/05404",
+    "price": 457,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "CAP FILLER LOCKABLE SUPPLIED\r\nWITHOUT KEY",
+    "sku": "ANC-123/05892",
+    "price": 83,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "COWLING FAN 21 2WS",
+    "sku": "ANC-123/05898",
+    "price": 386,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "FAN COOLING 21\" 4CX",
+    "sku": "ANC-123/05911",
+    "price": 306,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "FOOT SIDESHIFT STABILISER",
+    "sku": "ANC-123/06022",
+    "price": 354,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "STRUT DOOR STAY",
+    "sku": "ANC-123/06334",
+    "price": 106,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "CAP PRESSURE 0.5BAR OLD\r\nMODEL",
+    "sku": "ANC-123/06578",
+    "price": 79,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "GUARD STONE LEFT HAND BLACK",
+    "sku": "ANC-123/07177",
+    "price": 87,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "GUARD STONE RIGHT HAND BLACK",
+    "sku": "ANC-123/07178",
+    "price": 440,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "JOINT BALL END M8 LEFT HAND THREAD",
+    "sku": "ANC-123/08001",
+    "price": 161,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "JOINT BALL M8 RIGHT HAND",
+    "sku": "ANC-123/08002",
+    "price": 110,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "HOSE INDUCTION ASSEMBLY",
+    "sku": "ANC-123/44500",
+    "price": 131,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "RESERVOIR NEW",
+    "sku": "ANC-126/00200",
+    "price": 509,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "LINK TIPPING",
+    "sku": "ANC-126/00247",
+    "price": 238,
+    "createdAt": "2026-03-03T07:41:45.127Z"
+  },
+  {
+    "name": "TANK EXPANSION 2000 MOD.",
+    "sku": "ANC-126/02237",
+    "price": 264,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "3CX TRACK ROD",
+    "sku": "ANC-126/02253",
+    "price": 50,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "HING ASSY DOOR ANDWINDOW AS",
+    "sku": "ANC-128/11287",
+    "price": 110,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "KNOB EXCAVATOR SUPPLIED",
+    "sku": "ANC-128/13521",
+    "price": 392,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "TANK EXPANSION 2005",
+    "sku": "ANC-128/15313",
+    "price": 438,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "TANK EXPANSION FOR SENSOR",
+    "sku": "ANC-128/15479",
+    "price": 258,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "HOSE BOTTOM 2WS, TIER 3",
+    "sku": "ANC-128/E0100",
+    "price": 363,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "TANK DIESEL PLASTIC (6HOLES)",
+    "sku": "ANC-128/E5189",
+    "price": 421,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FRONT GRILLE 3CX NEWMODEL",
+    "sku": "ANC-128/F8113",
+    "price": 436,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SILENCER EXHAUST BOX 240 X 150MM",
+    "sku": "ANC-128/H2997",
+    "price": 134,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SILENCER EXHAUST LAST MODEL",
+    "sku": "ANC-128/H7629",
+    "price": 177,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CATERPILLER TRAC ROD NEW\r\nMODEL",
+    "sku": "ANC-143727",
+    "price": 514,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "NIPPLE GREASE 90 DEG.ANGLE",
+    "sku": "ANC-1450/1001",
+    "price": 516,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "OUT OF STOCK (1450/1002)",
+    "sku": "ANC-1450/1002",
+    "price": 63,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "KIT-REPAIR NEW MODEL",
+    "sku": "ANC-15/905505",
+    "price": 94,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "KIT-SEAL MASTER CYLINDER",
+    "sku": "ANC-15/908201",
+    "price": 267,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "VACUUM PUMP OLD MODEL",
+    "sku": "ANC-15/920000",
+    "price": 519,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "VACUUM PUMP RG ENGINE",
+    "sku": "ANC-15/920200",
+    "price": 157,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CYLINDER",
+    "sku": "ANC-15/920389",
+    "price": 91,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CATERPILLAR PIN ADAPTER",
+    "sku": "ANC-2011235",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CATERPİLLAR CYLINCER BRAKE",
+    "sku": "ANC-2061769",
+    "price": 524,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "GOVERNOR LEVER CAT",
+    "sku": "ANC-2093367",
+    "price": 522,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "STEERING CYLINDER / SEALS KIT CAT",
+    "sku": "ANC-215-2023",
+    "price": 212,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CIRCLIP",
+    "sku": "ANC-2203/0054",
+    "price": 190,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CAT CYLINDER BRAK SERVO",
+    "sku": "ANC-220-8226",
+    "price": 371,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CATERPILLAR THROTTLE CABLE",
+    "sku": "ANC-2350128",
+    "price": 356,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "PLATE BRAKE FRICTION CAT",
+    "sku": "ANC-238-5291",
+    "price": 329,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SEAL VALVE",
+    "sku": "ANC-25/221208",
+    "price": 129,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "VALVE CARTRIDGE NEW MODEL",
+    "sku": "ANC-25/MM3127",
+    "price": 524,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FAN COOLING 20\" PULLER 3CX",
+    "sku": "ANC-262/36800",
+    "price": 357,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "TURBOCHARGER",
+    "sku": "ANC-2674A226",
+    "price": 442,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "RADIATOR 3CX",
+    "sku": "ANC-30/915200",
+    "price": 506,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FAN 22\"558MM",
+    "sku": "ANC-30/925525",
+    "price": 297,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "ANC-30/926362",
+    "price": 488,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FAN COOLING ASSEMBLY LATEST\r\nMODEL",
+    "sku": "ANC-30/926537-72",
+    "price": 526,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FILTER PRE-CLEANER",
+    "sku": "ANC-32/903100",
+    "price": 470,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "ELEMENT FUEL FILTER",
+    "sku": "ANC-32/912001",
+    "price": 142,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "HYDRAULIC FILTER MEDIUMMODEL",
+    "sku": "ANC-32/913500",
+    "price": 409,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "AIR FILTER ASSEMBLY SET",
+    "sku": "ANC-32/915801-802",
+    "price": 455,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "ELEMENT AIR FILTER SET",
+    "sku": "ANC-32/917301-302",
+    "price": 213,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "AIR FILTER ASSEMBLY SET",
+    "sku": "ANC-32/917804-805",
+    "price": 455,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "ELEMENT FILTER 125 MICRON",
+    "sku": "ANC-32/920300",
+    "price": 474,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CAP FILLER-BREATHER",
+    "sku": "ANC-32/925421",
+    "price": 130,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "AIR FILTER SET",
+    "sku": "ANC-32/925682-683",
+    "price": 322,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FILTER AIR ASSEMBLY NEWEST",
+    "sku": "ANC-32/925684",
+    "price": 315,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FUEL SEDIMENT FILTER",
+    "sku": "ANC-32/925694",
+    "price": 529,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "KIT PRIMER",
+    "sku": "ANC-32/925710",
+    "price": 353,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FILTER FUEL 30 MICRON",
+    "sku": "ANC-32/925914",
+    "price": 355,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FUEL FILTER 5 MICRON",
+    "sku": "ANC-32/925950",
+    "price": 478,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "ELEMENT HYDRAULIC FILTER",
+    "sku": "ANC-32/926001",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "LINER STANDART",
+    "sku": "ANC-320/00001",
+    "price": 376,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "BUSH CAMSHAFT - (320/01519,) ANC-MP-035",
+    "sku": "ANC-320/01519",
+    "price": 83,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SEAT VALVEV INLET",
+    "sku": "ANC-320/02594",
+    "price": 348,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SEAT EXHAUST VALVE",
+    "sku": "ANC-320/02596",
+    "price": 390,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "GASKET CYLINDER HEAD JCB",
+    "sku": "ANC-320/02608",
+    "price": 411,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SLEEVE INJECTOR",
+    "sku": "ANC-320/02611",
+    "price": 357,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CYLıNDER HEAD NEW MODEL",
+    "sku": "ANC-320/02619",
+    "price": 259,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CYLINDER HEAD",
+    "sku": "ANC-320/02668",
+    "price": 390,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "KIT-BIG-END BEARINGSTANDARD",
+    "sku": "ANC-320/03016",
+    "price": 527,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "BUSH SMALL END",
+    "sku": "ANC-320/03017",
+    "price": 526,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "ROD CONNECTING",
+    "sku": "ANC-320/03114",
+    "price": 100,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "BEARING BIG END STD",
+    "sku": "ANC-320/03270",
+    "price": 81,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "VALVE INLET",
+    "sku": "ANC-320/03612",
+    "price": 300,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "VALVE EXHAUST",
+    "sku": "ANC-320/03616",
+    "price": 537,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "CAP OIL FILLER ASSEMBLY",
+    "sku": "ANC-320/04090",
+    "price": 538,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "GASKET OIL COOLER COVER",
+    "sku": "ANC-320/04113",
+    "price": 232,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "FILTER ENGINE OIL NEWMODEL",
+    "sku": "ANC-320/04133",
+    "price": 272,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "PUMP OIL HCR",
+    "sku": "ANC-320/04186",
+    "price": 214,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "COOLER COVER CASTING NEW\r\nMODEL",
+    "sku": "ANC-320/04210",
+    "price": 73,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "COOLER ASSEMBLY 6-PLATE TC/TCA",
+    "sku": "ANC-320/04212",
+    "price": 538,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "WATER PUMP JCB",
+    "sku": "ANC-320/04542",
+    "price": 265,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "SWITCH SENDER, COOLANT",
+    "sku": "ANC-320/04588",
+    "price": 439,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "THERMOSTAT NEW MODEL",
+    "sku": "ANC-320/04618",
+    "price": 338,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "TURBOCHARGER 68-74KW T2",
+    "sku": "ANC-320/06047",
+    "price": 447,
+    "createdAt": "2026-03-03T07:41:45.128Z"
+  },
+  {
+    "name": "GASKET EXHAUST MANIFOLD",
+    "sku": "ANC-320/06080",
+    "price": 453,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "PIPE FUEL NO.1 & 2 INJECTORS",
+    "sku": "ANC-320/06551",
+    "price": 334,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "PIPE FUEL NO.3 & 4 INJECTORS",
+    "sku": "ANC-320/06554",
+    "price": 61,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "INJECTOR ORJINAL",
+    "sku": "ANC-320/06835",
+    "price": 376,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "FILTER FUEL 5 MICRON NEWMODEL",
+    "sku": "ANC-320/07155",
+    "price": 397,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CLIP INJECTOR",
+    "sku": "ANC-320/07189",
+    "price": 307,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "PUMP LIFT NEW MODEL",
+    "sku": "ANC-320/07201",
+    "price": 62,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "SEAL FUEL INJECTOR",
+    "sku": "ANC-320/07504",
+    "price": 411,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "SEAL ROCKER COVER JCB ENGINE",
+    "sku": "ANC-320/07580",
+    "price": 513,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "IDLER PULLEY LONG",
+    "sku": "ANC-320/08530",
+    "price": 464,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "ALTERNATOR 12V-95AMP",
+    "sku": "ANC-320/08560",
+    "price": 418,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "COMPRESSOR AIR CONDITIONING 12V",
+    "sku": "ANC-320/08562",
+    "price": 218,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK1835",
+    "sku": "ANC-320/08598",
+    "price": 259,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK1855",
+    "sku": "ANC-320/08599",
+    "price": 482,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK1988",
+    "sku": "ANC-320/08603",
+    "price": 299,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK2011",
+    "sku": "ANC-320/08604",
+    "price": 59,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK2110",
+    "sku": "ANC-320/08606",
+    "price": 174,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK2141",
+    "sku": "ANC-320/08607",
+    "price": 346,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK2002",
+    "sku": "ANC-320/08608",
+    "price": 227,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DRIVE BELT, NEW MODEL 8PK1995",
+    "sku": "ANC-320/08609",
+    "price": 475,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "ALTERNATOR 14V-95AMP",
+    "sku": "ANC-320/08610",
+    "price": 379,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "ADJUSTER AUTOTENSIONER",
+    "sku": "ANC-320/08651",
+    "price": 82,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK",
+    "sku": "ANC-320/09201",
+    "price": 63,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-MAIN BEARING STANDARD",
+    "sku": "ANC-320/09202",
+    "price": 392,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-MAIN BEARING UNDERSIZE",
+    "sku": "ANC-320/09203",
+    "price": 463,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-MAIN BEARING",
+    "sku": "ANC-320/09204",
+    "price": 104,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-PISTON AND RINGS",
+    "sku": "ANC-320/09211",
+    "price": 484,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-PISTON RING",
+    "sku": "ANC-320/09214",
+    "price": 311,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-TOP GASKET JCB ENGINE",
+    "sku": "ANC-320/09216",
+    "price": 157,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-MAIN BEARING STANDARD",
+    "sku": "ANC-320/09335",
+    "price": 260,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-MAIN BEARING UNDERSIZE",
+    "sku": "ANC-320/09336",
+    "price": 259,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-BIG END BEARING",
+    "sku": "ANC-320/09340",
+    "price": 155,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "MOTOR STARTER 12V",
+    "sku": "ANC-320/09346",
+    "price": 527,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "TOP GASKET",
+    "sku": "ANC-320/09382",
+    "price": 510,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT BOTTOM GASKET WITH SEALS",
+    "sku": "ANC-320/09383",
+    "price": 55,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CATERPILLAR KIT-SEAL",
+    "sku": "ANC-3240356",
+    "price": 315,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CATERPILLAR KIT SEAL",
+    "sku": "ANC-3240386",
+    "price": 237,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CATERPILLAR PAD STABILIZER",
+    "sku": "ANC-3285196",
+    "price": 206,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "3CX JOINT BALL TRACK ROD",
+    "sku": "ANC-331/14861",
+    "price": 97,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK (331/14862)",
+    "sku": "ANC-331/14862",
+    "price": 161,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "STRUT GAS 287 CLOSED 475 OPEN",
+    "sku": "ANC-331/28215",
+    "price": 193,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK (331/31152)",
+    "sku": "ANC-331/31152",
+    "price": 173,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HANDLE LEFT HAND",
+    "sku": "ANC-331/31709",
+    "price": 223,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HANDLE RIGHT HAND DOOR",
+    "sku": "ANC-331/31710",
+    "price": 309,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "LF UPPER LOCKING WINDOW",
+    "sku": "ANC-331/34994",
+    "price": 395,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DOOR LOCKBACK TOP RHHAND",
+    "sku": "ANC-331/34998",
+    "price": 239,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "SILENCER EXHAUST TURBO 2002-2004",
+    "sku": "ANC-331/35702",
+    "price": 357,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "GAS STRUT 245X88",
+    "sku": "ANC-331/37268",
+    "price": 405,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "STRUT GAS 335-585",
+    "sku": "ANC-331/47026",
+    "price": 225,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "SILENCER JCB ENGINE",
+    "sku": "ANC-331/52383",
+    "price": 410,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "COWLING FAN 20INCH",
+    "sku": "ANC-332/C1667",
+    "price": 505,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HOSE SCAVENGE",
+    "sku": "ANC-332/C4382",
+    "price": 424,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "TOOTH",
+    "sku": "ANC-332/C4388",
+    "price": 286,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "TEETH NEW MODEL LEFT",
+    "sku": "ANC-332/C4389A",
+    "price": 387,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "TEETH NEW MODEL RIGHT",
+    "sku": "ANC-332/C4390A",
+    "price": 527,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HOSE AIR INLET TIER 3 BONNET",
+    "sku": "ANC-332/D2215",
+    "price": 401,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT - END CAP ASSEMBLY",
+    "sku": "ANC-332/D4842",
+    "price": 445,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT SEAL 90X60",
+    "sku": "ANC-332/E8224",
+    "price": 396,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "PUMP MAIN HYDRAULIC 36-29 CC-\r\nREV",
+    "sku": "ANC-332/F9030",
+    "price": 212,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HOSE CLEAN AIR LAST MODEL",
+    "sku": "ANC-332/G2201",
+    "price": 198,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "STICKER NEW MODEL SMALL\r\n540X169MM",
+    "sku": "ANC-332/G3450",
+    "price": 166,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "STICKER NEW MODEL BIG\r\n825X257MM",
+    "sku": "ANC-332/G3451",
+    "price": 433,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK (332/G6983)",
+    "sku": "ANC-332/G6983",
+    "price": 239,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-332/Y3852",
+    "price": 525,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "BARREL LOCK NEW MODEL",
+    "sku": "ANC-333/C3140",
+    "price": 97,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK (333/C6052)",
+    "sku": "ANC-333/C6052",
+    "price": 428,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "COMPLETE DOOR RIGHT",
+    "sku": "ANC-333/D2340",
+    "price": 109,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "COMPLETE DOOR LEFT",
+    "sku": "ANC-333/D2342",
+    "price": 225,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK (333/G3980)",
+    "sku": "ANC-333/G3980",
+    "price": 275,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HYDRAULIC PUMP 37-33 CCR",
+    "sku": "ANC-333/G5391",
+    "price": 267,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "Pump gear, single 14ccr",
+    "sku": "ANC-333/G5393",
+    "price": 92,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "OUT OF STOCK",
+    "sku": "ANC-333/Y1373",
+    "price": 154,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "DX BRAKE CYLINDER",
+    "sku": "ANC-333/Y4500",
+    "price": 369,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "GRILLE FRONT BLACK",
+    "sku": "ANC-335/08180",
+    "price": 301,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CAT AIR FILTER SET",
+    "sku": "ANC-346/6687/88",
+    "price": 106,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "KIT-REPAIR",
+    "sku": "ANC-35/404202",
+    "price": 127,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "VALVE STEERING",
+    "sku": "ANC-35/409300",
+    "price": 445,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "VALVE STEER 200 PAINTED",
+    "sku": "ANC-35/410700",
+    "price": 233,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "VALVE STEER 160 LOAD SENSE\r\nWITH ANTI-SHOCK",
+    "sku": "ANC-35/410900",
+    "price": 247,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "HUB BEARING CARRARO",
+    "sku": "ANC-37431A/37625",
+    "price": 123,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "CATERPILLAR HYDRAULIC CYLINDER SEAL KIT",
+    "sku": "ANC-3779352",
+    "price": 186,
+    "createdAt": "2026-03-03T07:41:45.129Z"
+  },
+  {
+    "name": "FILTER ELEMENT",
+    "sku": "ANC-40/300893",
+    "price": 154,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "RIM WHEEL DW16 X26",
+    "sku": "ANC-41/910100",
+    "price": 497,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "RIM WHEEL 14X28",
+    "sku": "ANC-41/910200",
+    "price": 498,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "RIM WHEEL 5 STUD 9X18",
+    "sku": "ANC-41/923900",
+    "price": 256,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GAITER GEAR CHANGE",
+    "sku": "ANC-445/03021",
+    "price": 540,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PLATE FRICTION",
+    "sku": "ANC-445/03205",
+    "price": 391,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PLATE FRICTION",
+    "sku": "ANC-445/05106",
+    "price": 456,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PLATE COUNTER",
+    "sku": "ANC-445/12307",
+    "price": 246,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "JOINT KNUCKLE SWIVEL 3CX LEFT",
+    "sku": "ANC-448/42602",
+    "price": 273,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "JOINT KNUCKLE SWIVEL 3CX\r\nRIGHT",
+    "sku": "ANC-448/42703",
+    "price": 200,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PISTON ASSEMBLY",
+    "sku": "ANC-449/10900",
+    "price": 95,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "COUPLING FLEXIBLE",
+    "sku": "ANC-45/906300",
+    "price": 412,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GEAR ANNULUS RING SET",
+    "sku": "ANC-450/10205",
+    "price": 451,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GEAR PLANET NEW MODEL",
+    "sku": "ANC-450/10206",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "BRAKE DISC SET NEW MODEL",
+    "sku": "ANC-450/10224",
+    "price": 316,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "BRAKE DISC SET NEW MODEL",
+    "sku": "ANC-450/10224-26",
+    "price": 107,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CASING ASSEMBLY DIFFERENTIAL",
+    "sku": "ANC-450/10800",
+    "price": 83,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "DIFFERENTIAL ASSEMBLY LSD",
+    "sku": "ANC-450/10900",
+    "price": 174,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GEAR SET 33SPL 6 GEARS 2PINS C-W WASHERS",
+    "sku": "ANC-450/11000D",
+    "price": 124,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CARRIER PLANETARY YELLOW (5\r\nHOLES)",
+    "sku": "ANC-450/12401",
+    "price": 210,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GEAR SUN NEW MODEL",
+    "sku": "ANC-450/12403",
+    "price": 451,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ARM STEER LINK",
+    "sku": "ANC-453/23401",
+    "price": 112,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "4CX JOINT KNUCKLE SWIVEL\r\nRIGHT",
+    "sku": "ANC-458/20040",
+    "price": 303,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "4CX JOINT KNUCKLE SWIVEL LEFT",
+    "sku": "ANC-458/20041",
+    "price": 252,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "TRUNNION",
+    "sku": "ANC-458/20061",
+    "price": 489,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CARRIER WHEEL BEARING BLACK",
+    "sku": "ANC-458/20446",
+    "price": 122,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "HUB PLANETARY CARRIER BLACK",
+    "sku": "ANC-458/M4230",
+    "price": 447,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "YOKE REAR NEW MODEL",
+    "sku": "ANC-459/70138",
+    "price": 543,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "YOKE COUPLING - 1480 35X126MM",
+    "sku": "ANC-459/70317",
+    "price": 386,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CARRARO SEAL 130X160X14,5-16",
+    "sku": "ANC-47703",
+    "price": 180,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CARRARO SEAL 130X160X14,5- 16",
+    "sku": "ANC-47703,331-8538",
+    "price": 384,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "BUCKET 16IN",
+    "sku": "ANC-531/19100",
+    "price": 111,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PIN HITCH 3/4\" C/W CHAIN\r\nKEYRING & LOCKPIN.",
+    "sku": "ANC-545/13600",
+    "price": 89,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "RESTRICTOR BANJO BOLT",
+    "sku": "ANC-559/90056",
+    "price": 374,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ELEMENT FILTER 25 MICRON",
+    "sku": "ANC-581/06301",
+    "price": 204,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ELEMENT TRANSMISSION FILTER",
+    "sku": "ANC-581/18063",
+    "price": 62,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ELEMENT TRANSMISSIONFILTER",
+    "sku": "ANC-581/18076",
+    "price": 472,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SHOVEL ROD OLD MODEL",
+    "sku": "ANC-590/40526",
+    "price": 120,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ROD PISTON",
+    "sku": "ANC-590/40578",
+    "price": 290,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ROD PISTON, 50X957 LIFT RAM",
+    "sku": "ANC-590/40581",
+    "price": 264,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "RAM LIFT HEAD COVER (50X90",
+    "sku": "ANC-594/14268",
+    "price": 485,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PISTON HEAD",
+    "sku": "ANC-595/10027",
+    "price": 281,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "PISTON HEAD 50X90",
+    "sku": "ANC-595/10037",
+    "price": 186,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "REAR BUCKET PISTON HEAD",
+    "sku": "ANC-595/10061",
+    "price": 342,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "OUT OF STOCK (649/51320)",
+    "sku": "ANC-649/51320",
+    "price": 353,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "LIGHT FRONT WITHOUT BULB\r\nO.M",
+    "sku": "ANC-700/30800",
+    "price": 338,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "BEACON 12V 155MM TALL",
+    "sku": "ANC-700/36800",
+    "price": 344,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "LIGHT REAR STOP",
+    "sku": "ANC-700/41600",
+    "price": 547,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "LAMP REAR COMBINATION NEW\r\nMODEL",
+    "sku": "ANC-700/50018",
+    "price": 345,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "LIGHT HEADLIGHT,RH",
+    "sku": "ANC-700/50121",
+    "price": 249,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH RIGHT HAND LIGHTS,",
+    "sku": "ANC-701/21202",
+    "price": 473,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH RIGHT HAND HANDLE",
+    "sku": "ANC-701/37702",
+    "price": 83,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH STEER PROXIMITY OLDMODEL",
+    "sku": "ANC-701/39000",
+    "price": 291,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "KEY DOOR IGNITION",
+    "sku": "ANC-701/45501",
+    "price": 113,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH COLUMN",
+    "sku": "ANC-701/52601",
+    "price": 350,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH FORWARD & REVERSE",
+    "sku": "ANC-701/52701",
+    "price": 463,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "COVER HSC SWITCH 701/60001",
+    "sku": "ANC-701/58702",
+    "price": 251,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "DECAL ROAD LAMPS SWITCH",
+    "sku": "ANC-701/58824",
+    "price": 291,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ACTUATOR SWITCH 701/60004",
+    "sku": "ANC-701/58826",
+    "price": 436,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ACTUATOR WASH WIPE 701/60003",
+    "sku": "ANC-701/58828",
+    "price": 179,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "ACTUATOR FOG LIGHT 701/60000",
+    "sku": "ANC-701/58829",
+    "price": 334,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH ROCKER 701/60002",
+    "sku": "ANC-701/58838",
+    "price": 50,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH COLUMN LIGHT WIPER\r\nYELLOW",
+    "sku": "ANC-701/70001",
+    "price": 517,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH COLUMN POWERSHIFT",
+    "sku": "ANC-701/80145",
+    "price": 409,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH IGNITION 9 PIN",
+    "sku": "ANC-701/80184",
+    "price": 309,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH FORWARD&REVERSELEFT",
+    "sku": "ANC-701/80296",
+    "price": 543,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH COLUMN BLACK R.H",
+    "sku": "ANC-701/80297",
+    "price": 526,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH  FORWARD LH BLACK",
+    "sku": "ANC-701/80298",
+    "price": 229,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH FORWARD & REVERSE\r\nL.H",
+    "sku": "ANC-701/80299",
+    "price": 140,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH OIL TEMP 5/8",
+    "sku": "ANC-701/80324",
+    "price": 210,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH ENGINE OIL PRESSURE\r\nNEW MODEL",
+    "sku": "ANC-701/80327",
+    "price": 171,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "OUT OF STOCK (701/80363)",
+    "sku": "ANC-701/80363",
+    "price": 505,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITCH WATER TEMPERATURE NEW MODEL",
+    "sku": "ANC-701/80389",
+    "price": 309,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "GAUGE WATER TEMPERATURE",
+    "sku": "ANC-704/50099",
+    "price": 193,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "TACHOMETER",
+    "sku": "ANC-704/D7231",
+    "price": 174,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "OUT OF STOCK (714/31800)",
+    "sku": "ANC-714/31800",
+    "price": 98,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "MOTOR WIPER REAR",
+    "sku": "ANC-714/40148",
+    "price": 297,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "BOX FUSELINK",
+    "sku": "ANC-716/30077",
+    "price": 247,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SOLENOID FUEL PUMP - ESOSCOLD START",
+    "sku": "ANC-716/30255",
+    "price": 535,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "HARNESS ESOS LINK",
+    "sku": "ANC-721/10495",
+    "price": 167,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "OUT OF STOCK (721/11872)",
+    "sku": "ANC-721/11872",
+    "price": 528,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "SWITH SOCKET NEW MODEL SOCKET 2",
+    "sku": "ANC-730/00606",
+    "price": 144,
+    "createdAt": "2026-03-03T07:41:45.130Z"
+  },
+  {
+    "name": "CAT OIL FILTER (7W2326,)",
+    "sku": "ANC-7W2326",
+    "price": 96,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WASHER NEW MODEL(808/00209-\r\n10,808/00209,808/00210,)",
+    "sku": "ANC-808/00209-10",
+    "price": 344,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BUSH BOTTOM KINGPOST\r\n105X110X64MM",
+    "sku": "ANC-808/00301",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING LINER 45MM",
+    "sku": "ANC-809/00125",
+    "price": 479,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING LINER",
+    "sku": "ANC-809/00131",
+    "price": 501,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING LINER",
+    "sku": "ANC-809/00176",
+    "price": 331,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT",
+    "sku": "ANC-811/50368",
+    "price": 165,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT 45X290MM",
+    "sku": "ANC-811/50369",
+    "price": 353,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT",
+    "sku": "ANC-811/50520",
+    "price": 424,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT",
+    "sku": "ANC-811/80001",
+    "price": 112,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT 172MM LONG WITHGROOVE",
+    "sku": "ANC-811/90198",
+    "price": 506,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PIN PIVOT",
+    "sku": "ANC-811/90214",
+    "price": 215,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "GASKET EXHAUST",
+    "sku": "ANC-813/00349",
+    "price": 429,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "SEAL PIVOT PIN GREASE",
+    "sku": "ANC-813/00425",
+    "price": 108,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "EXHAUST GASKET NEW MODEL",
+    "sku": "ANC-813/10258",
+    "price": 142,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BRAKE PISTON SEAL",
+    "sku": "ANC-813/50012-26",
+    "price": 534,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "O RING SET",
+    "sku": "ANC-813/50014-15",
+    "price": 238,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "SPRING NEW MODEL",
+    "sku": "ANC-814/00289",
+    "price": 332,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "STICKER 3CX SMALL",
+    "sku": "ANC-817/17858",
+    "price": 229,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "DECAL 3CX DIPPER",
+    "sku": "ANC-817/17893",
+    "price": 221,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "SPACER 90X60X2",
+    "sku": "ANC-819/00144",
+    "price": 223,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "CIRCLIP",
+    "sku": "ANC-821/00209",
+    "price": 84,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "CIRCLIP",
+    "sku": "ANC-821/00309",
+    "price": 355,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WASHER 70X45X1",
+    "sku": "ANC-823/00470",
+    "price": 508,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WASHER 70X45X2",
+    "sku": "ANC-823/00471",
+    "price": 278,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WASHER 70X45X3",
+    "sku": "ANC-823/00472",
+    "price": 270,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WASHER 70X45X4",
+    "sku": "ANC-823/00473",
+    "price": 310,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BOLT PLOUGH 3/4\" UNF X 70MM",
+    "sku": "ANC-826/00303",
+    "price": 354,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BOLT M14 X 70MM LONG",
+    "sku": "ANC-826/01060",
+    "price": 193,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BOLT REAR AXLE LONG",
+    "sku": "ANC-826/01206",
+    "price": 139,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "NUT STAKE M30 46MM HEAD",
+    "sku": "ANC-826/01551",
+    "price": 256,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "TRANSMISSION PISTON O RING",
+    "sku": "ANC-828/10181",
+    "price": 381,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "TRANSMISSION PISTON ORING",
+    "sku": "ANC-828/10181-80",
+    "price": 435,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BUSH",
+    "sku": "ANC-829/00548",
+    "price": 210,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING LINER 70X84X57SLEW PILOT",
+    "sku": "ANC-831/10211",
+    "price": 358,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "OUT OF STOCK (831/10295)",
+    "sku": "ANC-831/10295",
+    "price": 518,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE RADIATOR TOP",
+    "sku": "ANC-834/00181",
+    "price": 441,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE TOP",
+    "sku": "ANC-834/00261",
+    "price": 336,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "RADIATOR HOSE BOTTOM",
+    "sku": "ANC-834/00412",
+    "price": 238,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WATER HOSE - TOP",
+    "sku": "ANC-834/00437",
+    "price": 58,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "WATER HOSE - TOP",
+    "sku": "ANC-834/00528",
+    "price": 477,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "4740",
+    "sku": "ANC-834/00739",
+    "price": 380,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE BOTTOM RADIATOR 2003\r\nMODEL",
+    "sku": "ANC-834/10597",
+    "price": 414,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE SUCTION HYDRAULIC OIL",
+    "sku": "ANC-834/10759",
+    "price": 178,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE BOTTOM RADIATOR",
+    "sku": "ANC-834/10767",
+    "price": 259,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE BOTTOM",
+    "sku": "ANC-834/10991",
+    "price": 350,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BOTTOM HOSE RADIATOR LAST\r\nMODEL",
+    "sku": "ANC-834/11198",
+    "price": 544,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE RADIATOR TOP 2WS",
+    "sku": "ANC-834/11380",
+    "price": 140,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE AIR INDUCTION TURBO 2WS",
+    "sku": "ANC-834/11383",
+    "price": 480,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HOSE AIR INDUCTION AWS TURBO",
+    "sku": "ANC-834/11384",
+    "price": 439,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "OUT OF STOCK (904/06200)",
+    "sku": "ANC-904/06200",
+    "price": 290,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "OIL SEAL - DRIVE SHAFT",
+    "sku": "ANC-904/50009",
+    "price": 413,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "HUB SEAL - CASSETTE",
+    "sku": "ANC-904/50033",
+    "price": 329,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "TAPER BEARINGS",
+    "sku": "ANC-907/04100",
+    "price": 489,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING TAPER ROLLER",
+    "sku": "ANC-907/08300",
+    "price": 175,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING ROLLER DOUBLE - ROW",
+    "sku": "ANC-907/50200",
+    "price": 407,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING TAPER",
+    "sku": "ANC-907/52200",
+    "price": 242,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-910/34201",
+    "price": 358,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-910/34901",
+    "price": 116,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "CABLE SIDESHIFT BOOMLOCK",
+    "sku": "ANC-910/45200",
+    "price": 56,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-910/45401",
+    "price": 123,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-910/48801",
+    "price": 261,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "CABLE BOOMLOCK SIDESHIFT",
+    "sku": "ANC-910/60106",
+    "price": 309,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "ANC-910/60178",
+    "price": 470,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BRAKE PARKING CABLE NEW\r\nMODEL",
+    "sku": "ANC-910/60207",
+    "price": 410,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "THROTTLE CABLE, NEW MODEL",
+    "sku": "ANC-910/60216",
+    "price": 349,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "ASSEMBLY CABLE THROTTLE\r\nCONTROL ASSEMBLY",
+    "sku": "ANC-910/60236",
+    "price": 241,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PROPSHAFT 314MM CLOSEDCENTRES OLD",
+    "sku": "ANC-914/38100",
+    "price": 403,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "PROPSHAFT REAR NEWMODEL 35X126 SHORT",
+    "sku": "ANC-914/60263",
+    "price": 141,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "3CX JOINT CENTRE 30X82",
+    "sku": "ANC-914/80203",
+    "price": 332,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING THRUST SMALL",
+    "sku": "ANC-917/02800",
+    "price": 460,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING NEEDLE ROLLER NK\r\n45-30",
+    "sku": "ANC-917/50200",
+    "price": 325,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING NEEDLE 70 X 50 X 3 MM N.M.",
+    "sku": "ANC-917/50300",
+    "price": 173,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "BEARING NEEDLE THRUST",
+    "sku": "ANC-917/51400",
+    "price": 523,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "JCB BUCKET 300MM",
+    "sku": "ANC-980/62300",
+    "price": 251,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "JCB BUCKET 500MM",
+    "sku": "ANC-980/89992",
+    "price": 197,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "RAM SEAL KIT 65X120MM 4CX",
+    "sku": "ANC-991/00115",
+    "price": 66,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "KIT-SEAL 90MM X 60MM",
+    "sku": "40147",
+    "price": 354,
+    "createdAt": "2026-03-03T07:41:45.131Z"
+  },
+  {
+    "name": "KIT-SEAL 75MM X 45MM CYL",
+    "sku": "ANC-991/00156",
+    "price": 512,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KIT SEAL 100X60",
+    "sku": "ANC-991/10142",
+    "price": 135,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KIT-SEAL UNIVERSAL 70X40",
+    "sku": "ANC-991/20021",
+    "price": 126,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KIT-SEAL UNIVERSAL 80 X 50",
+    "sku": "ANC-991/20022",
+    "price": 295,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KIT-SEAL UNIVERSAL 100X60MM",
+    "sku": "ANC-991/20023",
+    "price": 221,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KIT SEAL 60X110MM",
+    "sku": "ANC-991/20030",
+    "price": 303,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "RAM SEAL KIT",
+    "sku": "ANC-991/20039",
+    "price": 90,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BUCKET BUSH",
+    "sku": "ANC-AG65/0",
+    "price": 347,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BUCKET BUSH",
+    "sku": "ANC-G65/0",
+    "price": 386,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BUCKET 200MM",
+    "sku": "ANC-KO-028",
+    "price": 427,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "GASKET KIT",
+    "sku": "BW-11488320/09383",
+    "price": 494,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "MIRROR",
+    "sku": "BW-123/04970",
+    "price": 187,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TANK CAP BIG-3DX",
+    "sku": "BW-123/05892",
+    "price": 75,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "LINK CASTING-OEM SI-0495",
+    "sku": "BW-126/00247",
+    "price": 218,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TANK COOLANT JCB 12602237 BRW 11559",
+    "sku": "BW-126/02237",
+    "price": 454,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SHAFT",
+    "sku": "BW-126/02253",
+    "price": 117,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SHAFT",
+    "sku": "BW-128/13949",
+    "price": 149,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BRAKE MASTER CYLINDER",
+    "sku": "BW-15/920389",
+    "price": 511,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "PLANET GEAR/HUB CIRCLIP",
+    "sku": "BW-2203/0054",
+    "price": 227,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SOLENOID VALVE",
+    "sku": "BW-25/222913",
+    "price": 93,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "AC CONDENSER",
+    "sku": "BW-30/925766",
+    "price": 520,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "INTERIOR BLOWER",
+    "sku": "BW-30/925975",
+    "price": 171,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "AIR FILTER, INNER AND OUTER",
+    "sku": "BW-32/915801-802",
+    "price": 483,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "AIR FILTER",
+    "sku": "BW-32/917804-05",
+    "price": 356,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-32/925682-83",
+    "price": 193,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-32/925717",
+    "price": 246,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-32/925950",
+    "price": 205,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "HEAD GASKET",
+    "sku": "BW-320/02616",
+    "price": 129,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "CYLINDER HEAD JCB",
+    "sku": "BW-320/02619A",
+    "price": 88,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "CYLINDER HEAD",
+    "sku": "BW-320/02620",
+    "price": 159,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "VALVE SEAT INLET 320/02691",
+    "sku": "BW-320/02691",
+    "price": 540,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SEAT EXHAUST VALVE",
+    "sku": "BW-320/02756",
+    "price": 245,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "VALVE",
+    "sku": "BW-320/03697",
+    "price": 505,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "VALVE",
+    "sku": "BW-320/03698",
+    "price": 267,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL FILTER 2011",
+    "sku": "BW-320/04133",
+    "price": 541,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL COOLER",
+    "sku": "BW-320/04147K",
+    "price": 423,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL PUMP NEW MODEL",
+    "sku": "BW-320/04186",
+    "price": 422,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL COOLER ASSEMBLY",
+    "sku": "BW-320/04198",
+    "price": 461,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL COOLER JCB",
+    "sku": "BW-320/04210",
+    "price": 543,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "WATER PUMP",
+    "sku": "BW-320/04542",
+    "price": 368,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "INJECTOR",
+    "sku": "BW-320/06835",
+    "price": 192,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FUEL INJECTOR",
+    "sku": "BW-320/06837",
+    "price": 171,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-320/07155",
+    "price": 370,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SNAP RING",
+    "sku": "BW-320/07189",
+    "price": 192,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FUEL FILTER",
+    "sku": "BW-320/07394",
+    "price": 478,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "PISTON & RINGS SET 444",
+    "sku": "BW-320/09211",
+    "price": 414,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "PISTON RING .50 OVER SIZE",
+    "sku": "BW-320/09213A",
+    "price": 506,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "444 ENGINE GASKET KIT",
+    "sku": "BW-320/09297",
+    "price": 377,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BEARING CON ROD",
+    "sku": "BW-320/09470",
+    "price": 402,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "RABEARING JCB BRW 14458",
+    "sku": "BW-320/09473",
+    "price": 539,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BEARING",
+    "sku": "BW-320/09474",
+    "price": 531,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BOTTOM KIT",
+    "sku": "BW-320/09477",
+    "price": 194,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SHORT BLOCK 444",
+    "sku": "BW-320/45010SB",
+    "price": 436,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "WATER PUMP",
+    "sku": "BW-320/A4904",
+    "price": 193,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "LIFT PUMP",
+    "sku": "BW-320/A7161",
+    "price": 462,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "ADJUSTER",
+    "sku": "BW-320/A8586",
+    "price": 460,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "ENGINE OIL FILTER",
+    "sku": "BW-32004133A",
+    "price": 380,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "OIL PUMP NEW MODEL",
+    "sku": "BW-32004186",
+    "price": 307,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-331/25629",
+    "price": 382,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "GAS STRUT REAR WINDOW BIG",
+    "sku": "BW-331/28215",
+    "price": 85,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "GUN STRUT",
+    "sku": "BW-332/C9086",
+    "price": 294,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TANK COOLANT EXPANSION",
+    "sku": "BW-332/F0606",
+    "price": 190,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "BW-332/F8191",
+    "price": 260,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "RESTRICTOR",
+    "sku": "BW-333/F6186",
+    "price": 103,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "REPAIR KIT 35404202 OE 35/404202",
+    "sku": "BW-35/404202",
+    "price": 478,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TRANSMISSION PISTON ASSY",
+    "sku": "BW-445/10900",
+    "price": 472,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "DIFFERENTIAL CASING HOUSING",
+    "sku": "BW-450/10800",
+    "price": 376,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "ANNULUS CARRIER",
+    "sku": "BW-450/12702",
+    "price": 545,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BRAKE COUNTER-HEAVY",
+    "sku": "BW-458/20285",
+    "price": 509,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FRICTION PLATE",
+    "sku": "BW-458/20353",
+    "price": 177,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "CARRIER PLATE",
+    "sku": "BW-458/20446",
+    "price": 525,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TRANSMISSION FILTER",
+    "sku": "BW-581/M8564",
+    "price": 153,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "WATER PUMP",
+    "sku": "BW-6685105",
+    "price": 389,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BELT TENSIONER",
+    "sku": "BW-6689611",
+    "price": 329,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "HEAD LIGHT L/H",
+    "sku": "BW-6718042",
+    "price": 364,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "HEAD LIGHT R/H",
+    "sku": "BW-6718043",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "LAMP 70050018",
+    "sku": "BW-700/50018",
+    "price": 316,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "PANEL SWITCH 12v",
+    "sku": "BW-701/60002",
+    "price": 438,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "WATER TEMPERATURE GAUGE",
+    "sku": "BW-704/50099",
+    "price": 141,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "METER",
+    "sku": "BW-704/D7231",
+    "price": 325,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "FUSE BOX JCB",
+    "sku": "BW-716/30077",
+    "price": 224,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "RELAY 4 PIN MACRO",
+    "sku": "BW-716/30148",
+    "price": 307,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "2 PIN HARNESS CONNECTOR-PKD",
+    "sku": "BW-718/20055",
+    "price": 407,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Planetary Gear Circlip",
+    "sku": "BW-821/00209",
+    "price": 99,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "CIRCLIP JCB",
+    "sku": "BW-821/00494",
+    "price": 344,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "BOLT WITH NUT",
+    "sku": "BW-826/00303",
+    "price": 525,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "AXLE HOUSING BOLT WITH NUT-8",
+    "sku": "BW-826/01714",
+    "price": 498,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "CABLE ASY",
+    "sku": "BW-910/60236",
+    "price": 399,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "NEEDLE BEARING",
+    "sku": "BW-917/50200",
+    "price": 315,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "KING PIN KIT",
+    "sku": "BW-990/99600",
+    "price": 237,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "SEAL KIT 991/20039",
+    "sku": "BW-991/20039",
+    "price": 366,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Wheel Nut",
+    "sku": "FA-106/40001",
+    "price": 175,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "TRANSMISSION GEAR PUMP",
+    "sku": "FA-121-7385",
+    "price": 122,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "MOUNTING FLEXIBLE",
+    "sku": "FA-123/00526",
+    "price": 410,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Ball Joint",
+    "sku": "FA-123/08001",
+    "price": 337,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Ball Joint",
+    "sku": "FA-123/08002",
+    "price": 200,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Clamp Housing",
+    "sku": "FA-128/14725",
+    "price": 290,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "Clamp Housing",
+    "sku": "FA-128/14726",
+    "price": 478,
+    "createdAt": "2026-03-03T07:41:45.132Z"
+  },
+  {
+    "name": "water tank",
+    "sku": "FA-128/14754",
+    "price": 74,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "WATER TANK",
+    "sku": "FA-128/15479",
+    "price": 385,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SILENCER",
+    "sku": "FA-128/H2997",
+    "price": 357,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Exhaust Silencer",
+    "sku": "FA-128/H7629",
+    "price": 465,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Grease Nipple",
+    "sku": "FA-1450/0001",
+    "price": 191,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Lift Pump",
+    "sku": "FA-17/927800",
+    "price": 305,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "CAT-Brake Counter Plate",
+    "sku": "FA-199/0786",
+    "price": 259,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Brake Master Cylinder",
+    "sku": "FA-2061769",
+    "price": 343,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SEAL KIT -CAT",
+    "sku": "FA-215-2023",
+    "price": 61,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "THROTTLE CABLE",
+    "sku": "FA-235-0128",
+    "price": 422,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "CAT-PLAT BRAKE FRICTION",
+    "sku": "FA-238-5291",
+    "price": 430,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Solenoid Valve",
+    "sku": "FA-25/220998",
+    "price": 198,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Pump CAT",
+    "sku": "FA-2830266",
+    "price": 507,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Air Filter",
+    "sku": "FA-32/915801/802",
+    "price": 219,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Air Filter",
+    "sku": "FA-32/917804/805",
+    "price": 183,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Air Filter",
+    "sku": "FA-32/925682/683",
+    "price": 351,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Element",
+    "sku": "FA-32/925950",
+    "price": 533,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Air Filter Assembly",
+    "sku": "FA-32/926084",
+    "price": 488,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "LINER STANDART",
+    "sku": "FA-320/00001",
+    "price": 339,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Bush camshaft",
+    "sku": "FA-320/01519",
+    "price": 110,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SEAT VALVE INLET",
+    "sku": "FA-320/02594",
+    "price": 504,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "VALVE EXHAUST SEAT .",
+    "sku": "FA-320/02596",
+    "price": 480,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Sleeve Injector",
+    "sku": "FA-320/02611",
+    "price": 75,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "BUSH",
+    "sku": "FA-320/03017",
+    "price": 532,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Valve Seal",
+    "sku": "FA-320/03533",
+    "price": 166,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Inlet Valve",
+    "sku": "FA-320/03612",
+    "price": 220,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Exhaust Valve",
+    "sku": "FA-320/03616",
+    "price": 107,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Engine Oil Pump",
+    "sku": "FA-320/04186",
+    "price": 446,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Water Pump",
+    "sku": "FA-320/04542",
+    "price": 506,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Switch",
+    "sku": "FA-320/04554",
+    "price": 62,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Turbo charger",
+    "sku": "FA-320/06047",
+    "price": 133,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GASKET",
+    "sku": "FA-320/06080",
+    "price": 52,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Pipe",
+    "sku": "FA-320/07052",
+    "price": 148,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Pipe",
+    "sku": "FA-320/07059",
+    "price": 376,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Fuel Lift Pump",
+    "sku": "FA-320/07201",
+    "price": 338,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Rocker Cover Gasket",
+    "sku": "FA-320/07580",
+    "price": 447,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Hub Fan Drive Assy",
+    "sku": "FA-320/08550",
+    "price": 539,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "ALTERNATOR JCB ENGINE",
+    "sku": "FA-320/08560",
+    "price": 525,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Drive Belt",
+    "sku": "FA-320/08601",
+    "price": 386,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "ALTERNATOR",
+    "sku": "FA-320/08610",
+    "price": 415,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Bearing Kit",
+    "sku": "FA-320/09206",
+    "price": 216,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Piston Kit-Std",
+    "sku": "FA-320/09211",
+    "price": 431,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Piston ring",
+    "sku": "FA-320/09213",
+    "price": 296,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Bearing",
+    "sku": "FA-320/09340",
+    "price": 462,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "STARTER MOTOR",
+    "sku": "FA-320/09346",
+    "price": 547,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Sensor",
+    "sku": "FA-320/09650",
+    "price": 307,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SEAL KIT",
+    "sku": "FA-324-0356",
+    "price": 60,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "KIT SEAL",
+    "sku": "FA-324-0386",
+    "price": 283,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Gaiter",
+    "sku": "FA-331/25683",
+    "price": 190,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Latch",
+    "sku": "FA-331/28233",
+    "price": 485,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Latch",
+    "sku": "FA-331/28235",
+    "price": 290,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SILENCER",
+    "sku": "FA-331/52383",
+    "price": 322,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SEAL WHEEL",
+    "sku": "FA-3318538",
+    "price": 220,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Induction Filter Assy",
+    "sku": "FA-332/G3496",
+    "price": 370,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Radiator",
+    "sku": "FA-332/G3762",
+    "price": 111,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SEAL KIT",
+    "sku": "FA-377-9352",
+    "price": 65,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "TRUNNION",
+    "sku": "FA-448/03902",
+    "price": 83,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GEAR ANNULUS RING",
+    "sku": "FA-450/10205",
+    "price": 456,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GEAR ANNULUS RING",
+    "sku": "FA-450/10206",
+    "price": 109,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GEAR ANNULUS RING",
+    "sku": "FA-450/10210",
+    "price": 484,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "BRAKE . DISK SET",
+    "sku": "FA-450/10224/226",
+    "price": 484,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Yoke",
+    "sku": "FA-450/27200",
+    "price": 481,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Crown Wheel & Pinion",
+    "sku": "FA-458/70140",
+    "price": 51,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Crown Wheel & Pinion",
+    "sku": "FA-458/70260",
+    "price": 166,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Solenoid Valve",
+    "sku": "FA-459/M2874",
+    "price": 216,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Cap",
+    "sku": "FA-477/00223",
+    "price": 534,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Hose",
+    "sku": "FA-649/51240",
+    "price": 301,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Brake Hose",
+    "sku": "FA-649/51320",
+    "price": 223,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Tail Lights",
+    "sku": "FA-700/50018",
+    "price": 454,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Lens",
+    "sku": "FA-700/50024",
+    "price": 92,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "KEY",
+    "sku": "FA-701/45501",
+    "price": 492,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Rocker Switch",
+    "sku": "FA-701/60000",
+    "price": 80,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SWITCH",
+    "sku": "FA-701/80324",
+    "price": 401,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "TEMPERATURE SWITCH",
+    "sku": "FA-701/80363",
+    "price": 368,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "SWITCH WATER",
+    "sku": "FA-701/80389",
+    "price": 119,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Front Wiper Arm",
+    "sku": "FA-714/40282",
+    "price": 134,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Solenoid Coil",
+    "sku": "FA-717/20142",
+    "price": 401,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Socket",
+    "sku": "FA-730/00606",
+    "price": 234,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GASKET-SILENCER",
+    "sku": "FA-813/00349",
+    "price": 487,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "GASKET EXHAUST",
+    "sku": "FA-813/10258",
+    "price": 254,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Compression Spring",
+    "sku": "FA-814/00367",
+    "price": 165,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Disc Spring",
+    "sku": "FA-814/10115",
+    "price": 414,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Spacer",
+    "sku": "FA-819/00148",
+    "price": 372,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Plug",
+    "sku": "FA-826/00425",
+    "price": 507,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Bolt",
+    "sku": "FA-826/00533",
+    "price": 359,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Wheel Stud",
+    "sku": "FA-826/00923",
+    "price": 111,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "BUSH SLEW",
+    "sku": "FA-831/10211",
+    "price": 493,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Adaptor Suction Port",
+    "sku": "FA-903/20774",
+    "price": 519,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Seal",
+    "sku": "FA-904/06700",
+    "price": 462,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Oil Seal",
+    "sku": "FA-904/50040",
+    "price": 506,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "Oil Seal",
+    "sku": "FA-904/50047",
+    "price": 204,
+    "createdAt": "2026-03-03T07:41:45.133Z"
+  },
+  {
+    "name": "BEARING-ROLLER",
+    "sku": "FA-907/50200",
+    "price": 255,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "BEARING-HUB",
+    "sku": "FA-907/52200",
+    "price": 532,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Drive Shaft",
+    "sku": "FA-914/60181",
+    "price": 88,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/00100",
+    "price": 467,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/00102",
+    "price": 334,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/00110",
+    "price": 455,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/00145",
+    "price": 447,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "KIT-BUCKET",
+    "sku": "FA-991/00147",
+    "price": 119,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/00148",
+    "price": 439,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/20002",
+    "price": 89,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/20021",
+    "price": 433,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/20022",
+    "price": 465,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/20023",
+    "price": 308,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Seal Kit",
+    "sku": "FA-991/20030",
+    "price": 395,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "RESERVOIR NEW",
+    "sku": "FA-126/00200",
+    "price": 101,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "TRANSMISSION FILTER",
+    "sku": "JCB-581/M8564",
+    "price": 106,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FRONT AXLE BEARING",
+    "sku": "FA-907/05700",
+    "price": 398,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Right Hand Light",
+    "sku": "ANC-700/G6320",
+    "price": 243,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Hub Fan Drive Assy",
+    "sku": "ANC-320/08550",
+    "price": 366,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Wheel Nut",
+    "sku": "ANC-106/40001",
+    "price": 95,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "TRUNNION",
+    "sku": "ANC-448/03902",
+    "price": 129,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "GEAR KNOB",
+    "sku": "ANC-128/G6887",
+    "price": 323,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "WATER PUMP",
+    "sku": "ANC-02/202480-3541672",
+    "price": 157,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "R/H Mirror Arm",
+    "sku": "ANC-123/04968",
+    "price": 270,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "L/H MIRROR ARM",
+    "sku": "ANC-123/04969",
+    "price": 532,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Brake Servo",
+    "sku": "ANC-15/905501",
+    "price": 285,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "BUSH SPRING / SHOVEL",
+    "sku": "FA-1208/0023",
+    "price": 411,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Clamp Housing",
+    "sku": "ANC-128/14725",
+    "price": 359,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Clamp Housing",
+    "sku": "ANC-128/14726",
+    "price": 474,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FRONT GRILLE 3CX NEWMODEL",
+    "sku": "FA-128/F8113",
+    "price": 296,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Gaitor Clamp Ring",
+    "sku": "ANC-821/10159",
+    "price": 488,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Door Latch Lever",
+    "sku": "ANC-826/11105",
+    "price": 160,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Door Latch Lever",
+    "sku": "ANC-826/11106",
+    "price": 144,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "SWITCH FORWARD&REVERSELEFT",
+    "sku": "FA-701/80296",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "SWITCH COLUMN BLACK R.H",
+    "sku": "FA-701/80297",
+    "price": 308,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Drive Belt Tensioner",
+    "sku": "ANC-320/08588",
+    "price": 396,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "SWITCH  FORWARD LH BLACK",
+    "sku": "FA-701/80298",
+    "price": 104,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Hose pump",
+    "sku": "ANC-333/F3125",
+    "price": 457,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "REAR LIGHT LENS",
+    "sku": "ANC-700/50024",
+    "price": 324,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Oval Working Right Hand Light",
+    "sku": "FA-700/50089",
+    "price": 293,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Expansion Tank",
+    "sku": "ANC-128/14093",
+    "price": 548,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Handle Left Hand Door",
+    "sku": "FA-331/31709",
+    "price": 144,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "DOOR HANDLE (RH)",
+    "sku": "FA-331/31710",
+    "price": 78,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "COWLING FAN",
+    "sku": "FA-923/10086",
+    "price": 388,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "STEERING WHEEL",
+    "sku": "FA-333/D1381",
+    "price": 327,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "STONE GUARD-LH BLACK",
+    "sku": "FA-123/07177",
+    "price": 479,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "STONE GUARD-RH BLACK",
+    "sku": "FA-123/07178",
+    "price": 156,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Fuel Hose",
+    "sku": "FA-332/G6390",
+    "price": 119,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Defletor Plastico do Radiador",
+    "sku": "FA-332/H2847",
+    "price": 316,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FUEL HOSE",
+    "sku": "FA-332/G6498",
+    "price": 157,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "RH REAR LIGHT",
+    "sku": "FA-700/50130",
+    "price": 335,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Rear Light Cluster",
+    "sku": "FA-700/50129",
+    "price": 535,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FUEL LINE",
+    "sku": "FA-649/51854",
+    "price": 485,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "AIR FILTER ASSEMBLY",
+    "sku": "FA-32/925684",
+    "price": 130,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "LEVER GAITER",
+    "sku": "ANC-331/25685",
+    "price": 371,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "GAITER",
+    "sku": "ANC-332/F1130",
+    "price": 74,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "fuel filters",
+    "sku": "JCB-32/925694",
+    "price": 467,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "HYDRAULIC SUCTION HOSE",
+    "sku": "JCB-834/10759",
+    "price": 331,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Hydraulic and Transmission Filter",
+    "sku": "CAT-126-1817",
+    "price": 412,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Wholesale Hydraulic Oil Filter",
+    "sku": "CAT-326-1163",
+    "price": 173,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "fuel filter",
+    "sku": "ANC-320/07052",
+    "price": 272,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "BACKHOE HYDRAULIC CYL",
+    "sku": "BW-991/20023",
+    "price": 64,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Hydraulic Cylinder",
+    "sku": "BW-991/20030",
+    "price": 72,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Polarity Testers",
+    "sku": "BW-911/00147",
+    "price": 289,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Air Filter Kit",
+    "sku": "BOB-6666375/76",
+    "price": 471,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Fuel Filter with Water Separator",
+    "sku": "BOB-6667352",
+    "price": 282,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Hydraulic Oil Filte",
+    "sku": "BOB-7363818",
+    "price": 454,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Engine Oil Filter",
+    "sku": "BOB-6675517",
+    "price": 520,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Head Light",
+    "sku": "BW-700/50054",
+    "price": 391,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "EXTERIOR MIRROR",
+    "sku": "BW-123/04970",
+    "price": 93,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "WINDOW HINGE",
+    "sku": "FA-128/11287",
+    "price": 512,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FUEL PUMP",
+    "sku": "ANC-17/927800",
+    "price": 287,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "FUEL CAP",
+    "sku": "FA-331/31152",
+    "price": 311,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Fuel Lift Pump",
+    "sku": "FA-17/919300",
+    "price": 179,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/90486",
+    "price": 396,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Brake Master Cylinder",
+    "sku": "FA-15/905504",
+    "price": 450,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/90471",
+    "price": 464,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIN",
+    "sku": "FA-811/90677",
+    "price": 315,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/90472",
+    "price": 165,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/50381",
+    "price": 416,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/90198",
+    "price": 398,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIN",
+    "sku": "ANC-347/10416",
+    "price": 382,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIN",
+    "sku": "FA-811/50373",
+    "price": 400,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "ANC-811/90471",
+    "price": 279,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "ANC-811/10111",
+    "price": 79,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/90473",
+    "price": 139,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIN",
+    "sku": "ANC-811/90677",
+    "price": 424,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/50372",
+    "price": 179,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FAT-811/90676",
+    "price": 326,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "ANC-811/70002",
+    "price": 393,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "ANC-811/70003",
+    "price": 490,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "ANC-811/50482",
+    "price": 402,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/50569",
+    "price": 188,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Brake Master Cylinder",
+    "sku": "FA-15/920389",
+    "price": 483,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Front & Rear Propshaft Universal Joint",
+    "sku": "ANC-914/35401",
+    "price": 492,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "BELT BOBCAT",
+    "sku": "BW-7363920",
+    "price": 134,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Rubber Bushing- BOBCAT",
+    "sku": "BW-6553411",
+    "price": 129,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "Ignition Switch - BOBCAT",
+    "sku": "BW-6693245",
+    "price": 62,
+    "createdAt": "2026-03-03T07:41:45.134Z"
+  },
+  {
+    "name": "WHEEL NUT   BOBCAT",
+    "sku": "BW-6564669",
+    "price": 70,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "PIVOT PIN",
+    "sku": "FA-811/20061",
+    "price": 200,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "CAT-179-9806",
+    "price": 215,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "CAT-6I-2502",
+    "price": 300,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "CAT-131-8821",
+    "price": 206,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "CAT-6I-2506",
+    "price": 211,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER",
+    "sku": "CAT-131-8822",
+    "price": 452,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "HYD FILTER   BOBCAT",
+    "sku": "BOB-7319444",
+    "price": 188,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FILTER   BOBCAT",
+    "sku": "BOB-6661248",
+    "price": 505,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "HYD FILTER  BOBCAT",
+    "sku": "BW-6668819",
+    "price": 265,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FRONT GRILLE",
+    "sku": "ANC-332/Y8581",
+    "price": 219,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Drive Pump Belt BOBCAT",
+    "sku": "BW-6736775",
+    "price": 392,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BOBCAT   S630 BELT",
+    "sku": "BW-7188792",
+    "price": 221,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL PUMP  BOBCAT",
+    "sku": "BW-6657734",
+    "price": 223,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Holdwell Stop Solenoid  BOBCAT",
+    "sku": "BW-6691498",
+    "price": 414,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "LIFT FUEL PUMP",
+    "sku": "BW-17/912400",
+    "price": 522,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "LIFT FUEL PUMP   BOBCAT",
+    "sku": "BW-6655216",
+    "price": 398,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "DRIVE BELT IDLER ASSEMBLY  BOBCAT",
+    "sku": "BW-6735884",
+    "price": 450,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "ALTERNATOR   BOBCAT",
+    "sku": "BW-6678205",
+    "price": 98,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "WATER PUMP- BOBCAT",
+    "sku": "BW-6653941",
+    "price": 74,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "ALTERNATOR",
+    "sku": "BW-333/G6698",
+    "price": 332,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BRAKE MASTER CYLINDER",
+    "sku": "FA-333/Y4500",
+    "price": 166,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "TENSINOR BELT--  BUBCAT",
+    "sku": "BW-7253514",
+    "price": 155,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "REAR PROPSHAFT",
+    "sku": "FA-914/60265",
+    "price": 430,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Hub End Driveshaft",
+    "sku": "BW-914/89501",
+    "price": 460,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Hub Side Shaft",
+    "sku": "BW-914/87401",
+    "price": 173,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "MASTER CYLINDER TELEHANDLE",
+    "sku": "ANC-15/920208",
+    "price": 498,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Bolt 1/2\" x 1.1/2\" long",
+    "sku": "FA-826/00706",
+    "price": 173,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "NUT LOCK",
+    "sku": "FA-1340-0403Z",
+    "price": 266,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Kit-spider",
+    "sku": "BW-914/86202",
+    "price": 137,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SPIDER KIT",
+    "sku": "FA-914/80207",
+    "price": 84,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SPIDER KIT",
+    "sku": "BW-333/H4196",
+    "price": 76,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "KINGPOST PIVOT PIN",
+    "sku": "ANC-811/90165",
+    "price": 229,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Spider Kit",
+    "sku": "FA-914-80207",
+    "price": 234,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "HYDRACLAMP BOLT & NUT",
+    "sku": "ANC-123/00928",
+    "price": 239,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Cardanshaft u-joint",
+    "sku": "ANC-914/23201",
+    "price": 190,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "PUMP DRIVESHAFT",
+    "sku": "FA-914/10803",
+    "price": 309,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "PUMP DRIVESHAFT",
+    "sku": "ANC-914/10803",
+    "price": 70,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Drive shaft cross",
+    "sku": "FA-914/45301",
+    "price": 178,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Drive shaft cross",
+    "sku": "FA-914145301",
+    "price": 304,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SPIDER KIT",
+    "sku": "ANC-914/45301N",
+    "price": 178,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "STEERINGCYLINDER",
+    "sku": "FA-2085232",
+    "price": 95,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Hose Assembly",
+    "sku": "JCB-320/0133",
+    "price": 426,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "ENGINE OIL FILTER",
+    "sku": "JCB-320/04134",
+    "price": 261,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL FILTER",
+    "sku": "JCB-320/07155",
+    "price": 507,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL FILTER",
+    "sku": "FA-320/07155",
+    "price": 384,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SECOND HAND 12V HORN",
+    "sku": "FA-704/37300",
+    "price": 146,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "oil filter",
+    "sku": "JCB-581/18076",
+    "price": 451,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Steering Proximity Switch",
+    "sku": "FA-701/39000",
+    "price": 246,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Proximity Switch",
+    "sku": "FA-701/80314",
+    "price": 481,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SWITCH PROXIMITY",
+    "sku": "FA-704/31600",
+    "price": 448,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Engine Oil Dipstick",
+    "sku": "ANC-123/06297",
+    "price": 72,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BACKHOE DIPSTICK & TUBE ASSEMBLY",
+    "sku": "ANC-320/04249",
+    "price": 68,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SHORT DIPSTICK TUBE",
+    "sku": "FA-320/04273",
+    "price": 495,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "DIPSTICK TUBE",
+    "sku": "ANC-123/05933",
+    "price": 263,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "SPARE PARTS WEAR PARTS",
+    "sku": "ANC-128/10850",
+    "price": 549,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BRW Engine Mounting",
+    "sku": "BW-331/40347",
+    "price": 467,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "RESILIENT MOUNT",
+    "sku": "BW-331/18442",
+    "price": 280,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "OLD STOCK WASHER",
+    "sku": "ANC-823/00473",
+    "price": 72,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "WASHER",
+    "sku": "BW-823/00470",
+    "price": 469,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "CIRCLIP 60MM PIN",
+    "sku": "ANC-821/00459",
+    "price": 426,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BACKHOE CIRCLIP",
+    "sku": "ANC-826/00874",
+    "price": 462,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Fuel Pipe Assembly",
+    "sku": "FA-320/06551",
+    "price": 436,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "HYDRO PIPE",
+    "sku": "ANC-320/06583",
+    "price": 256,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "HYDRO PIPE",
+    "sku": "FA-320/06583",
+    "price": 434,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL PIPES",
+    "sku": "FA-320/06580",
+    "price": 254,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BACKHOE GENUINE",
+    "sku": "JCB-320/09211",
+    "price": 319,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "KINGPOST BUSH",
+    "sku": "ANC-808/00385",
+    "price": 54,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BACKHOE - BEARING LINER",
+    "sku": "ANC-809/00128",
+    "price": 301,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "BACKHOE SLEW SWING BUSHES",
+    "sku": "ANC-831/10229",
+    "price": 384,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "LEAK OFF PIPE",
+    "sku": "FA-320/07192",
+    "price": 184,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL FILTER",
+    "sku": "CAS-84565926",
+    "price": 236,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "FUEL FILTER",
+    "sku": "CAS-51508759",
+    "price": 157,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "AIR FILTER INTAKE",
+    "sku": "FA-32/925716",
+    "price": 374,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "Engine Oil Filter",
+    "sku": "CAS-84221215",
+    "price": 466,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "ENGINE AIR FILTER",
+    "sku": "ANC-321/27024P",
+    "price": 539,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "DOOR LOCK RIGHT HAND",
+    "sku": "FA-123/02451",
+    "price": 71,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "DOOR HANDLE/CATCH LH",
+    "sku": "FA-123/02450",
+    "price": 416,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "WIPER BLADE",
+    "sku": "FA-333/C1550",
+    "price": 479,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "WIPER BLADE FOR WHEELED LOADER",
+    "sku": "FA-714/40283",
+    "price": 320,
+    "createdAt": "2026-03-03T07:41:45.135Z"
+  },
+  {
+    "name": "va",
+    "sku": "wwewse",
+    "price": 222,
+    "createdAt": "2026-03-03T09:36:04.300Z"
+  },
+  {
+    "name": "cATER",
+    "sku": "ANC",
+    "price": 11,
+    "createdAt": "2026-03-03T09:36:47.407Z"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "_id": "69a61d3cf44397f09fef7fb7",
+  "invoiceNumber": "INV-2026-0002",
+  "sourceType": "quote",
+  "sourceId": "69a5f57698f0494a5ab57317",
+  "customer": {
+    "name": "Ahmed",
+    "company": "Saudi Horizon Verification",
+    "email": "ahmed@example.com",
+    "phone": "0501234567"
+  },
+  "items": [
+    {
+      "description": "Bucket Teeth EX200 x50\\nTrack Bolts x200",
+      "quantity": 1,
+      "unitPrice": 222,
+      "total": 222,
+      "_id": "69a61d3cf44397f09fef7fb8"
+    }
+  ],
+  "subtotal": 222,
+  "vatRate": 15,
+  "vatAmount": 33.3,
+  "totalAmount": 255.3,
+  "currency": "SAR",
+  "status": "draft",
+  "notes": "invoivehttp://localhost:3000/invoice/69a61cd9f44397f09fef7f9d",
+  "createdBy": "699b95ca0d5ea8f870f243ad",
+  "createdAt": "2026-03-02T23:29:00.160Z",
+  "updatedAt": "2026-03-02T23:29:00.160Z"
+}

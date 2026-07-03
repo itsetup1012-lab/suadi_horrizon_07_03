@@ -1,0 +1,31 @@
+"use client";
+
+import { FooterSection } from '@/components/home/FooterSection';
+import { HeroSection } from '@/components/home/HeroSection';
+import { BrandMarqueeSection } from '@/components/home/BrandMarqueeSection';
+import { WhyChooseSection } from '@/components/home/WhyChooseSection';
+import { CategoriesSection } from '@/components/home/CategoriesSection';
+import { StatsWallSection } from '@/components/home/StatsWallSection';
+import { TestimonialSection } from '@/components/home/TestimonialSection';
+import { CTABannerSection } from '@/components/home/CTABannerSection';
+
+export default function Home() {
+    return (
+        <>
+            {/* Grain Overlay */}
+            <div className="grain-overlay" />
+
+            {/* Main Content - Continuous scroll layout */}
+            <main className="relative bg-navy">
+                <HeroSection />
+                <BrandMarqueeSection />
+                <WhyChooseSection />
+                <CategoriesSection />
+                <StatsWallSection />
+                <TestimonialSection />
+                <CTABannerSection />
+                <FooterSection />
+            </main>
+        </>
+    );
+}

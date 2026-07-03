@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "Home",
+        "spare_parts": "Spare Parts",
+        "machinery": "Machinery",
+        "news": "News",
+        "about": "About",
+        "contact": "Contact",
+        "cart": "Cart",
+        "login": "Login",
+        "logout": "Logout",
+        "brands": "Brands",
+        "services": "Services"
+    },
+    "common": {
+        "language": "Language",
+        "brand": "Saudi Horizon"
+    }
+}

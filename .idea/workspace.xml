@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec97fcaa-df2e-4fee-891d-17051383d1cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/products.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/account/wishlist/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/account/wishlist/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/products/[id]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/products/[id]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/products/[id]/similar/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/products/[id]/similar/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/products/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/products/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/upload/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/upload/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/ProductsPageClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/ProductsPageClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductTableRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductTableRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/FeaturedProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/FeaturedProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db/models/CookieConsentRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/models/CookieConsentRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db/models/Notification.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/models/Notification.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db/models/Order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/models/Order.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db/models/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/models/Product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/db/mongodb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/mongodb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="3AQrepSSk4Jr623sTGrszzqbbMe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec97fcaa-df2e-4fee-891d-17051383d1cf" name="Changes" comment="" />
+      <created>1772535733182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772535733182</updated>
+      <workItem from="1772535738595" duration="304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

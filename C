@@ -1,0 +1,625 @@
+/**
+ * Complete Supabase Setup Script
+ * 
+ * This script:
+ * 1. Creates all 27 tables (runs SQL schema)
+ * 2. Seeds brands, categories, and products from anc_products_detailed.json
+ * 
+ * Usage: node scripts/supabase-setup.js
+ */
+
+import { createClient } from '@supabase/supabase-js';
+import dotenv from 'dotenv';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import crypto from 'crypto';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, '..', '.env.local') });
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+    console.error('❌ Missing Supabase credentials');
+    process.exit(1);
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// =============================================
+// STEP 1: Create all tables via SQL
+// =============================================
+async function createTables() {
+    console.log('\n📦 STEP 1: Creating all 27 tables...');
+
+    const sql = `
+-- 1. BRANDS
+CREATE TABLE IF NOT EXISTS brands (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    slug TEXT UNIQUE NOT NULL,
+    description TEXT,
+    logo TEXT,
+    website TEXT,
+    is_featured BOOLEAN DEFAULT false,
+    is_active BOOLEAN DEFAULT true,
+    metadata JSONB DEFAULT '{}',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 2. CATEGORIES
+CREATE TABLE IF NOT EXISTS categories (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    slug TEXT UNIQUE NOT NULL,
+    description TEXT,
+    image TEXT,
+    parent TEXT REFERENCES categories(id),
+    display_order INT DEFAULT 0,
+    is_active BOOLEAN DEFAULT true,
+    metadata JSONB DEFAULT '{}',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 3. PRODUCTS
+CREATE TABLE IF NOT EXISTS products (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    sku TEXT NOT NULL,
+    brand TEXT NOT NULL REFERENCES brands(id),
+    category TEXT NOT NULL REFERENCES categories(id),
+    subcategory TEXT REFERENCES categories(id),
+    price NUMERIC(10,2) NOT NULL DEFAULT 0,
+    image JSONB,
+    gallery JSONB DEFAULT '[]',
+    documents JSONB DEFAULT '[]',
+    description TEXT,
+    specs JSONB,
+    compatibility TEXT[] DEFAULT '{}',
+    in_stock BOOLEAN DEFAULT true,
+    stock INT DEFAULT 0,
+    rating NUMERIC(3,2) DEFAULT 0,
+    reviews INT DEFAULT 0,
+    oem_code TEXT,
+    featured BOOLEAN DEFAULT false,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_products_sku ON products(sku);
+CREATE INDEX IF NOT EXISTS idx_products_brand ON products(brand);
+CREATE INDEX IF NOT EXISTS idx_products_category ON products(category);
+
+-- 4. USERS
+CREATE TABLE IF NOT EXISTS users (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    email TEXT UNIQUE NOT NULL,
+    password TEXT,
+    role TEXT DEFAULT 'user' CHECK (role IN ('user', 'admin')),
+    refresh_token TEXT,
+    oauth_provider TEXT,
+    oauth_id TEXT,
+    profile JSONB DEFAULT '{"name": ""}',
+    wishlist TEXT[] DEFAULT '{}',
+    notification_preferences JSONB DEFAULT '{"orderUpdates":true,"promotionalEmails":false,"smsNotifications":true,"pushNotifications":true,"newsletter":false,"newProducts":true,"priceAlerts":true}',
+    last_login_at TIMESTAMPTZ,
+    total_spent NUMERIC(12,2) DEFAULT 0,
+    total_orders INT DEFAULT 0,
+    segment TEXT DEFAULT 'new' CHECK (segment IN ('vip', 'b2b', 'regular', 'new')),
+    preferred_categories TEXT[] DEFAULT '{}',
+    preferred_brands TEXT[] DEFAULT '{}',
+    reset_password_token TEXT,
+    reset_password_expires TIMESTAMPTZ,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 5. USER_ADDRESSES
+CREATE TABLE IF NOT EXISTS user_addresses (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    full_name TEXT NOT NULL,
+    address TEXT NOT NULL,
+    city TEXT NOT NULL,
+    state TEXT NOT NULL,
+    zip_code TEXT NOT NULL,
+    country TEXT NOT NULL,
+    phone TEXT NOT NULL,
+    is_default BOOLEAN DEFAULT false
+);
+
+-- 6. USER_PAYMENT_METHODS
+CREATE TABLE IF NOT EXISTS user_payment_methods (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    type TEXT NOT NULL,
+    last4 TEXT NOT NULL,
+    expiry TEXT NOT NULL,
+    name TEXT NOT NULL,
+    is_default BOOLEAN DEFAULT false
+);
+
+-- 7. USER_PURCHASE_HISTORY
+CREATE TABLE IF NOT EXISTS user_purchase_history (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    order_id UUID,
+    product_id TEXT NOT NULL,
+    product_name TEXT NOT NULL,
+    category TEXT,
+    brand TEXT,
+    amount NUMERIC(10,2) NOT NULL,
+    purchased_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 8. ORDERS
+CREATE TABLE IF NOT EXISTS orders (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    total_amount NUMERIC(12,2) NOT NULL,
+    shipping_address JSONB NOT NULL,
+    status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'shipped', 'delivered', 'cancelled')),
+    tracking_number TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 9. ORDER_ITEMS
+CREATE TABLE IF NOT EXISTS order_items (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    order_id UUID NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
+    product TEXT NOT NULL,
+    quantity INT NOT NULL,
+    price NUMERIC(10,2) NOT NULL
+);
+
+-- 10. INVOICES
+CREATE TABLE IF NOT EXISTS invoices (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    invoice_number TEXT UNIQUE,
+    source_type TEXT NOT NULL CHECK (source_type IN ('order', 'quote')),
+    source_id TEXT NOT NULL,
+    customer JSONB NOT NULL,
+    subtotal NUMERIC(12,2) NOT NULL,
+    vat_rate NUMERIC(5,2) DEFAULT 15,
+    vat_amount NUMERIC(12,2) NOT NULL,
+    total_amount NUMERIC(12,2) NOT NULL,
+    currency TEXT DEFAULT 'SAR',
+    status TEXT DEFAULT 'draft' CHECK (status IN ('draft', 'sent', 'paid', 'overdue', 'cancelled')),
+    due_date TIMESTAMPTZ,
+    paid_at TIMESTAMPTZ,
+    notes TEXT,
+    created_by TEXT NOT NULL,
+    sent_at TIMESTAMPTZ,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 11. INVOICE_ITEMS
+CREATE TABLE IF NOT EXISTS invoice_items (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    invoice_id UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+    description TEXT NOT NULL,
+    quantity INT NOT NULL,
+    unit_price NUMERIC(10,2) NOT NULL,
+    total NUMERIC(10,2) NOT NULL
+);
+
+-- 12. QUOTE_REQUESTS
+CREATE TABLE IF NOT EXISTS quote_requests (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id TEXT,
+    company_name TEXT NOT NULL,
+    contact_person TEXT NOT NULL,
+    phone TEXT NOT NULL,
+    email TEXT NOT NULL,
+    project_type TEXT,
+    items TEXT NOT NULL,
+    quantities TEXT,
+    timeline TEXT,
+    notes TEXT,
+    status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'reviewed', 'responded', 'accepted', 'cancelled')),
+    admin_response TEXT,
+    quoted_price NUMERIC(12,2),
+    valid_until TIMESTAMPTZ,
+    accepted_at TIMESTAMPTZ,
+    order_id TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 13. QUOTE_MESSAGES
+CREATE TABLE IF NOT EXISTS quote_messages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    quote_id UUID NOT NULL REFERENCES quote_requests(id) ON DELETE CASCADE,
+    sender TEXT NOT NULL CHECK (sender IN ('admin', 'user')),
+    text TEXT NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 14. NOTIFICATIONS
+CREATE TABLE IF NOT EXISTS notifications (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    type TEXT NOT NULL,
+    title TEXT NOT NULL,
+    message TEXT NOT NULL,
+    is_read BOOLEAN DEFAULT false,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 15. BANNERS
+CREATE TABLE IF NOT EXISTS banners (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    title TEXT NOT NULL,
+    image TEXT NOT NULL,
+    link TEXT,
+    position TEXT NOT NULL,
+    is_active BOOLEAN DEFAULT true,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 16. NEWS
+CREATE TABLE IF NOT EXISTS news (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    title TEXT NOT NULL,
+    slug TEXT UNIQUE NOT NULL,
+    excerpt TEXT NOT NULL,
+    content TEXT NOT NULL,
+    image TEXT NOT NULL,
+    category TEXT NOT NULL,
+    author TEXT NOT NULL,
+    is_published BOOLEAN DEFAULT true,
+    published_at TIMESTAMPTZ DEFAULT NOW(),
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 17. HOMEPAGE_CONFIG
+CREATE TABLE IF NOT EXISTS homepage_config (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    featured_product_ids TEXT[] DEFAULT '{}',
+    featured_products_count INT DEFAULT 8,
+    stats JSONB DEFAULT '{"yearsExperience":15,"satisfiedClients":500,"partsAvailable":5000,"onTimeDelivery":98}',
+    hero_title TEXT DEFAULT '',
+    hero_subtitle TEXT DEFAULT '',
+    updated_by TEXT DEFAULT '',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 18. HOMEPAGE_SECTIONS
+CREATE TABLE IF NOT EXISTS homepage_sections (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    config_id UUID NOT NULL REFERENCES homepage_config(id) ON DELETE CASCADE,
+    section_id TEXT NOT NULL,
+    label TEXT NOT NULL,
+    visible BOOLEAN DEFAULT true,
+    sort_order INT NOT NULL
+);
+
+-- 19. HOMEPAGE_TESTIMONIALS
+CREATE TABLE IF NOT EXISTS homepage_testimonials (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    config_id UUID NOT NULL REFERENCES homepage_config(id) ON DELETE CASCADE,
+    quote TEXT NOT NULL,
+    author TEXT NOT NULL,
+    role TEXT NOT NULL,
+    company TEXT NOT NULL,
+    is_active BOOLEAN DEFAULT true
+);
+
+-- 20. PROMOTIONS
+CREATE TABLE IF NOT EXISTS promotions (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    code TEXT UNIQUE NOT NULL,
+    title TEXT NOT NULL,
+    description TEXT,
+    discount_type TEXT NOT NULL CHECK (discount_type IN ('percentage', 'fixed')),
+    discount_value NUMERIC(10,2) NOT NULL,
+    start_date TIMESTAMPTZ DEFAULT NOW(),
+    expiry_date TIMESTAMPTZ NOT NULL,
+    is_active BOOLEAN DEFAULT true,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 21. COOKIE_SETTINGS
+CREATE TABLE IF NOT EXISTS cookie_settings (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    enabled BOOLEAN DEFAULT true,
+    necessary_only BOOLEAN DEFAULT false,
+    analytics BOOLEAN DEFAULT true,
+    marketing BOOLEAN DEFAULT false,
+    position TEXT DEFAULT 'bottom',
+    expiration INT DEFAULT 365,
+    last_updated TIMESTAMPTZ DEFAULT NOW(),
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 22. COOKIE_CONSENT_RECORDS
+CREATE TABLE IF NOT EXISTS cookie_consent_records (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    consent_id TEXT UNIQUE NOT NULL,
+    categories JSONB DEFAULT '{"necessary":true,"analytics":false,"marketing":false,"preferences":false}',
+    user_agent TEXT,
+    ip_hash TEXT,
+    timestamp TIMESTAMPTZ DEFAULT NOW(),
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 23. COMPLAINTS
+CREATE TABLE IF NOT EXISTS complaints (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    ticket_id TEXT UNIQUE NOT NULL,
+    subject TEXT NOT NULL,
+    description TEXT NOT NULL,
+    status TEXT DEFAULT 'open' CHECK (status IN ('open', 'in_progress', 'resolved', 'closed')),
+    resolution TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 24. SERVICE_REQUESTS
+CREATE TABLE IF NOT EXISTS service_requests (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    machine TEXT NOT NULL,
+    issue TEXT NOT NULL,
+    preferred_time TIMESTAMPTZ,
+    status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'scheduled', 'completed', 'cancelled')),
+    notes TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 25. CHAT_MESSAGES
+CREATE TABLE IF NOT EXISTS chat_messages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    sender UUID NOT NULL REFERENCES users(id),
+    receiver UUID NOT NULL REFERENCES users(id),
+    content TEXT NOT NULL,
+    timestamp TIMESTAMPTZ DEFAULT NOW(),
+    read BOOLEAN DEFAULT false
+);
+
+-- 26. PRODUCT_VIEWS
+CREATE TABLE IF NOT EXISTS product_views (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES users(id),
+    session_id TEXT NOT NULL,
+    product_id TEXT NOT NULL,
+    product_name TEXT,
+    category TEXT,
+    brand TEXT,
+    referrer TEXT,
+    duration INT,
+    device_type TEXT DEFAULT 'desktop' CHECK (device_type IN ('desktop', 'mobile', 'tablet')),
+    viewed_at TIMESTAMPTZ DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_pv_session ON product_views(session_id);
+CREATE INDEX IF NOT EXISTS idx_pv_product ON product_views(product_id);
+CREATE INDEX IF NOT EXISTS idx_pv_user ON product_views(user_id);
+CREATE INDEX IF NOT EXISTS idx_pv_viewed ON product_views(viewed_at);
+
+-- 27. CART_ITEMS
+CREATE TABLE IF NOT EXISTS cart_items (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    product_id TEXT NOT NULL REFERENCES products(id),
+    quantity INT NOT NULL DEFAULT 1 CHECK (quantity > 0),
+    added_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(user_id, product_id)
+);
+CREATE INDEX IF NOT EXISTS idx_cart_user ON cart_items(user_id);
+CREATE INDEX IF NOT EXISTS idx_cart_product ON cart_items(product_id);
+
+-- AUTO-UPDATE updated_at TRIGGER
+CREATE OR REPLACE FUNCTION update_updated_at()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Apply trigger to all tables with updated_at
+DO $$
+DECLARE
+    t TEXT;
+BEGIN
+    FOR t IN
+        SELECT table_name FROM information_schema.columns
+        WHERE column_name = 'updated_at' AND table_schema = 'public'
+    LOOP
+        EXECUTE format(
+            'CREATE TRIGGER IF NOT EXISTS set_updated_at BEFORE UPDATE ON %I FOR EACH ROW EXECUTE FUNCTION update_updated_at()',
+            t
+        );
+    END LOOP;
+END;
+$$;
+
+-- Seed default data
+INSERT INTO homepage_config (featured_products_count, stats, hero_title, hero_subtitle, updated_by)
+VALUES (8, '{"yearsExperience":15,"satisfiedClients":500,"partsAvailable":5000,"onTimeDelivery":98}', '', '', '')
+ON CONFLICT DO NOTHING;
+
+INSERT INTO cookie_settings (enabled, necessary_only, analytics, marketing, position, expiration)
+VALUES (true, false, true, false, 'bottom', 365)
+ON CONFLICT DO NOTHING;
+`;
+
+    const { error } = await supabase.rpc('exec_sql', { sql_text: sql });
+    
+    if (error) {
+        console.log('⚠️  RPC exec_sql not available, trying direct SQL via management API...');
+        return await createTablesViaManagementAPI(sql);
+    }
+    
+    console.log('✅ Tables created successfully via RPC');
+    return true;
+}
+
+async function createTablesViaManagementAPI(sql) {
+    // Fallback: Use Supabase's pg_dump SQL execution via the database URL
+    // The pg module is already installed
+    console.log('Using direct PostgreSQL connection...');
+    
+    const { default: pg } = await import('pg');
+    
+    const pool = new pg.Pool({
+        connectionString: `postgresql://postgres.ugahdqephngfkgqgxhdm:7ppNmn7MtDjsBAYw@aws-1-ap-south-1.pooler.supabase.com:5432/postgres`,
+    });
+
+    try {
+        // Split SQL into individual statements
+        const statements = sql
+            .split(';')
+            .map(s => s.trim())
+            .filter(s => s.length > 0);
+        
+        for (const stmt of statements) {
+            await pool.query(stmt + ';');
+        }
+        console.log('✅ All 27 tables created successfully via direct DB connection');
+        return true;
+    } catch (err) {
+        console.error('❌ SQL execution failed:', err.message);
+        throw err;
+    } finally {
+        await pool.end();
+    }
+}
+
+// =============================================
+// STEP 2: Seed Products Data
+// =============================================
+async function seedProducts() {
+    console.log('\n📦 STEP 2: Seeding products data...');
+    
+    const productsPath = path.join(__dirname, '..', '..', 'saudi_horizon_fresh', 'products', 'anc_products_detailed.json');
+    if (!fs.existsSync(productsPath)) {
+        console.error(`❌ Products file not found at: ${productsPath}`);
+        console.log('   Trying alternative path...');
+        // Try from the C: root
+        const altPath = 'C:\\Users\\vv\\Desktop\\saudi_horizon_fresh\\products\\anc_products_detailed.json';
+        if (!fs.existsSync(altPath)) {
+            throw new Error('Products data file not found');
+        }
+        return await seedFromPath(altPath);
+    }
+    
+    return await seedFromPath(productsPath);
+}
+
+async function seedFromPath(filePath) {
+    const productsRaw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    console.log(`Loaded ${productsRaw.length} products from data file`);
+
+    // Step 1: Insert brand
+    console.log('\nInserting brand: Anac Makina...');
+    const { error: brandError } = await supabase
+        .from('brands')
+        .upsert({ id: 'Anac Makina', name: 'Anac Makina', slug: 'anac-makina' }, { onConflict: 'id' });
+    
+    if (brandError) {
+        console.error('❌ Brand insert failed:', brandError.message);
+        return;
+    }
+    console.log('✅ Brand inserted');
+
+    // Step 2: Insert categories
+    const uniqueCategories = [...new Set(productsRaw.map(p => p.category_name))];
+    console.log(`\nInserting ${uniqueCategories.length} categories...`);
+    
+    for (const cat of uniqueCategories) {
+        const slug = cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+        const uniqueSlug = `anac-${slug}`;
+        const { error } = await supabase
+            .from('categories')
+            .upsert({ id: cat, name: cat, slug: uniqueSlug }, { onConflict: 'id' });
+        
+        if (error) {
+            console.error(`❌ Error upserting category "${cat}":`, error.message);
+        }
+    }
+    console.log(`✅ ${uniqueCategories.length} categories inserted`);
+
+    // Step 3: Insert products in chunks
+    console.log(`\nInserting ${productsRaw.length} products in chunks of 500...`);
+    
+    const mapped = productsRaw.map(p => {
+        const specs = p.features || {};
+        return {
+            id: crypto.randomUUID(),
+            name: p.name,
+            sku: p.ref_no || `ANC-${crypto.randomBytes(3).toString('hex')}`,
+            brand: 'Anac Makina',
+            category: p.category_name,
+            subcategory: null,
+            price: 0,
+            image: { url: `/${p.local_image}`, alt: p.name },
+            gallery: [],
+            documents: [],
+            description: `Reference Number: ${p.ref_no}` + (specs['AĞIRLIK'] ? `\nWeight: ${specs['AĞIRLIK']}` : '') + (specs['KUTU ÖLÇÜSÜ'] ? `\nDimensions: ${specs['KUTU ÖLÇÜSÜ']}` : '') + '\n\nProducts are aftermarket parts guaranteed by ANAÇ.',
+            specs: specs,
+            compatibility: p.cross_references ? p.cross_references.map(cr => `Old: ${cr.old_number} -> New: ${cr.new_number}`) : [],
+            in_stock: true,
+            stock: 100,
+            rating: 5,
+            reviews: 0,
+            oem_code: p.ref_no || null,
+            featured: false,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+        };
+    });
+
+    let totalInserted = 0;
+    for (let i = 0; i < mapped.length; i += 500) {
+        const chunk = mapped.slice(i, i + 500);
+        const { error } = await supabase
+            .from('products')
+            .insert(chunk);
+        
+        if (error) {
+            console.error(`❌ Error inserting chunk ${i}-${i + chunk.length}:`, error.message);
+        } else {
+            totalInserted += chunk.length;
+            console.log(`   ✅ Inserted chunk ${i}-${i + chunk.length} (${totalInserted}/${mapped.length})`);
+        }
+    }
+    
+    console.log(`\n✅ Seeding complete! ${totalInserted}/${mapped.length} products inserted.`);
+}
+
+// =============================================
+// MAIN
+// =============================================
+async function main() {
+    console.log('🚀 Starting Supabase Setup\n');
+    console.log(`📋 Project: ${supabaseUrl}`);
+    
+    try {
+        await createTables();
+        await seedProducts();
+        console.log('\n🎉 Supabase setup complete!');
+    } catch (error) {
+        console.error('\n❌ Setup failed:', error.message);
+        process.exit(1);
+    }
+}
+
+main();

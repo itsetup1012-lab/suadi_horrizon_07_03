@@ -1,0 +1,288 @@
+{
+    "equipmentTypes": [
+        {
+            "id": "excavator",
+            "name": "Excavator",
+            "icon": "🚜",
+            "systems": [
+                "Engine",
+                "Hydraulic",
+                "Electrical",
+                "Transmission",
+                "Cooling System"
+            ],
+            "brands": [
+                {
+                    "id": "caterpillar",
+                    "name": "Caterpillar",
+                    "models": [
+                        {
+                            "id": "cat-320d",
+                            "name": "320D",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015",
+                                "2015-2018"
+                            ],
+                            "compatibilityId": "cat-320d"
+                        },
+                        {
+                            "id": "cat-325d",
+                            "name": "325D",
+                            "yearRanges": [
+                                "2007-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "cat-325d"
+                        },
+                        {
+                            "id": "cat-330d",
+                            "name": "330D",
+                            "yearRanges": [
+                                "2008-2013",
+                                "2013-2018"
+                            ],
+                            "compatibilityId": "cat-330d"
+                        }
+                    ]
+                },
+                {
+                    "id": "komatsu",
+                    "name": "Komatsu",
+                    "models": [
+                        {
+                            "id": "pc200",
+                            "name": "PC200",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015",
+                                "2015-2020"
+                            ],
+                            "compatibilityId": "kom-pc200"
+                        },
+                        {
+                            "id": "pc300",
+                            "name": "PC300",
+                            "yearRanges": [
+                                "2006-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "kom-pc300"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "loader",
+            "name": "Wheel Loader",
+            "icon": "🏗️",
+            "systems": [
+                "Engine",
+                "Hydraulic",
+                "Electrical",
+                "Transmission",
+                "Cooling System"
+            ],
+            "brands": [
+                {
+                    "id": "caterpillar",
+                    "name": "Caterpillar",
+                    "models": [
+                        {
+                            "id": "cat-950",
+                            "name": "950",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015",
+                                "2015-2020"
+                            ],
+                            "compatibilityId": "cat-950"
+                        },
+                        {
+                            "id": "cat-966",
+                            "name": "966",
+                            "yearRanges": [
+                                "2006-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "cat-966"
+                        }
+                    ]
+                },
+                {
+                    "id": "jcb",
+                    "name": "JCB",
+                    "models": [
+                        {
+                            "id": "jcb-456",
+                            "name": "456",
+                            "yearRanges": [
+                                "2008-2014",
+                                "2014-2020"
+                            ],
+                            "compatibilityId": "jcb-456"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dozer",
+            "name": "Bulldozer",
+            "icon": "🚧",
+            "systems": [
+                "Engine",
+                "Hydraulic",
+                "Electrical",
+                "Transmission",
+                "Cooling System"
+            ],
+            "brands": [
+                {
+                    "id": "caterpillar",
+                    "name": "Caterpillar",
+                    "models": [
+                        {
+                            "id": "cat-d6",
+                            "name": "D6",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015",
+                                "2015-2020"
+                            ],
+                            "compatibilityId": "cat-d6"
+                        },
+                        {
+                            "id": "cat-d8",
+                            "name": "D8",
+                            "yearRanges": [
+                                "2006-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "cat-d8"
+                        }
+                    ]
+                },
+                {
+                    "id": "komatsu",
+                    "name": "Komatsu",
+                    "models": [
+                        {
+                            "id": "d65",
+                            "name": "D65",
+                            "yearRanges": [
+                                "2007-2013",
+                                "2013-2019"
+                            ],
+                            "compatibilityId": "kom-d65"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "backhoe",
+            "name": "Backhoe Loader",
+            "icon": "🔨",
+            "systems": [
+                "Engine",
+                "Hydraulic",
+                "Electrical",
+                "Transmission"
+            ],
+            "brands": [
+                {
+                    "id": "jcb",
+                    "name": "JCB",
+                    "models": [
+                        {
+                            "id": "jcb-3cx",
+                            "name": "3CX",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015",
+                                "2015-2020"
+                            ],
+                            "compatibilityId": "jcb-3cx"
+                        },
+                        {
+                            "id": "jcb-4cx",
+                            "name": "4CX",
+                            "yearRanges": [
+                                "2006-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "jcb-4cx"
+                        }
+                    ]
+                },
+                {
+                    "id": "caterpillar",
+                    "name": "Caterpillar",
+                    "models": [
+                        {
+                            "id": "cat-420",
+                            "name": "420",
+                            "yearRanges": [
+                                "2007-2013",
+                                "2013-2019"
+                            ],
+                            "compatibilityId": "cat-420"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "grader",
+            "name": "Motor Grader",
+            "icon": "⚙️",
+            "systems": [
+                "Engine",
+                "Hydraulic",
+                "Electrical",
+                "Transmission"
+            ],
+            "brands": [
+                {
+                    "id": "caterpillar",
+                    "name": "Caterpillar",
+                    "models": [
+                        {
+                            "id": "cat-120",
+                            "name": "120",
+                            "yearRanges": [
+                                "2005-2010",
+                                "2010-2015"
+                            ],
+                            "compatibilityId": "cat-120"
+                        },
+                        {
+                            "id": "cat-140",
+                            "name": "140",
+                            "yearRanges": [
+                                "2006-2012",
+                                "2012-2018"
+                            ],
+                            "compatibilityId": "cat-140"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "searchIndex": [
+        "caterpillar 320d excavator",
+        "cat 320d",
+        "320d excavator",
+        "caterpillar excavator",
+        "komatsu pc200",
+        "pc200 excavator",
+        "jcb 3cx backhoe",
+        "3cx backhoe loader",
+        "caterpillar 950 loader",
+        "cat 950",
+        "wheel loader 950"
+    ]
+}
